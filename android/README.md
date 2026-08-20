@@ -18,3 +18,5 @@ On the Tecno phone, install the APK, open Gidlight, tap **Choose live wallpaper*
 ## Build
 
 Open this `android` folder in Android Studio with Android SDK 35 and JDK 17 installed, then run the `app` configuration on a device or emulator. Android Studio can generate the Gradle wrapper if needed.
+
+Or install the prebuilt APK from the [Gidlight Android v1.0.0 release](https://github.com/gi-deom/project100/releases/tag/v1.0.0).

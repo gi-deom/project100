@@ -32,6 +32,10 @@ The Windows helper updates the desktop wallpaper. Windows lock-screen changes re
 
 The Settings tab controls the slideshow interval in seconds, minutes, hours, or days. The selected value is saved locally and is independent of the OS wallpaper updater.
 
+## Android APK
+
+The native Android companion APK is available from the [Gidlight Android v1.0.0 release](https://github.com/gi-deom/project100/releases/tag/v1.0.0). Download `app-debug.apk` on the phone, allow installation from that source, open Gidlight, and approve it through Android's live-wallpaper picker.
+
 ## Run it
 
 Open `index.html` directly in a browser. No build step or package installation is required.
