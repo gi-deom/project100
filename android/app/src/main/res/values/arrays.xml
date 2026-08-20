@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="interval_units">
+        <item>Seconds</item>
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+    </string-array>
+</resources>

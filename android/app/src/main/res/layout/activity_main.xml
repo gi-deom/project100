@@ -1,50 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#080B0B">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GIDLIGHT"
-        android:textColor="#D7F34D"
-        android:textStyle="bold"
-        android:letterSpacing="0.18"
-        android:textSize="12sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Your screen, in motion."
-        android:textColor="#EDF2E9"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Choose Gidlight from Android's wallpaper picker to apply Bing images to your home screen, lock screen, or both."
-        android:textColor="#89938B"
-        android:textSize="15sp" />
-
-    <Button
-        android:id="@+id/chooseWallpaperButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Choose live wallpaper"
-        android:textAllCaps="false" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Android shows the system confirmation screen before changing wallpaper. Gidlight never bypasses device permissions."
-        android:textColor="#89938B"
-        android:textSize="12sp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#080B0B">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="24dp">
+        <TextView android:layout_width="30dp" android:layout_height="30dp" android:gravity="center" android:text="G" android:textColor="#101313" android:textStyle="bold" android:textSize="16sp" android:background="#D7F34D" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginStart="10dp" android:text="gidlight" android:textColor="#EDF2E9" android:textStyle="bold" android:textSize="14sp" />
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+        <TextView android:id="@+id/syncStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="READY" android:textColor="#89938B" android:textSize="9sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingStart="24dp" android:paddingEnd="24dp">
+        <Button android:id="@+id/queueTab" style="@style/GidlightTab" android:text="Queue" />
+        <Button android:id="@+id/settingsTab" style="@style/GidlightTab" android:text="Settings" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:background="#26302B" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="24dp">
+            <LinearLayout android:id="@+id/queueView" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView style="@style/GidlightEyebrow" android:text="YOUR QUEUE" />
+                <TextView style="@style/GidlightTitle" android:text="Open archive,\nnone repeated." />
+                <TextView android:id="@+id/queueCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="Bing archive ready" android:textColor="#D7F34D" android:textSize="13sp" />
+                <Button android:id="@+id/chooseWallpaperButton" style="@style/GidlightPrimaryButton" android:text="Choose live wallpaper" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Android will ask whether Gidlight should apply the wallpaper to your home screen, lock screen, or both." android:textColor="#89938B" android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/settingsView" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+                <TextView style="@style/GidlightEyebrow" android:text="PREFERENCES" />
+                <TextView style="@style/GidlightTitle" android:text="Set the rhythm\nof the room." />
+                <TextView style="@style/GidlightLabel" android:text="Change photo every" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/intervalValue" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:inputType="number" android:singleLine="true" android:text="8" android:textColor="#EDF2E9" android:background="@drawable/gidlight_input" android:paddingStart="14dp" />
+                    <Spinner android:id="@+id/intervalUnit" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginStart="8dp" android:layout_weight="1" android:background="@drawable/gidlight_input" android:entries="@array/interval_units" />
+                </LinearLayout>
+                <TextView android:id="@+id/intervalSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="8 minutes" android:textColor="#D7F34D" android:textSize="11sp" />
+                <TextView style="@style/GidlightLabel" android:text="Wallpaper target" />
+                <Switch android:id="@+id/desktopToggle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Home screen" android:checked="true" android:textColor="#EDF2E9" />
+                <Switch android:id="@+id/lockToggle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lock screen" android:checked="true" android:textColor="#EDF2E9" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="The Android wallpaper picker confirms the final target. Gidlight never bypasses device permissions." android:textColor="#89938B" android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
 </LinearLayout>

@@ -47,6 +47,15 @@ class GidlightWallpaperService : WallpaperService() {
 
         private fun startUpdates() {
             updateJob?.cancel()
+            val preferences = getSharedPreferences("gidlight", MODE_PRIVATE)
+            val value = preferences.getInt("interval_value", 8).coerceAtLeast(1)
+            val unit = preferences.getInt("interval_unit", 1)
+            intervalMs = value.toLong() * when (unit) {
+                0 -> 1000L
+                2 -> 60L * 60L * 1000L
+                3 -> 24L * 60L * 60L * 1000L
+                else -> 60L * 1000L
+            }
             updateJob = scope.launch {
                 while (isActive && running) {
                     downloadAndDraw()

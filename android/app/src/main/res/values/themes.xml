@@ -6,4 +6,32 @@
         <item name="android:statusBarColor">#080B0B</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
+    <style name="GidlightTab" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">#EDF2E9</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">44dp</item>
+    </style>
+    <style name="GidlightEyebrow">
+        <item name="android:textColor">#D7F34D</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.14</item>
+    </style>
+    <style name="GidlightTitle">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">#EDF2E9</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="GidlightLabel">
+        <item name="android:layout_marginTop">34dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">#EDF2E9</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="GidlightPrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
 </resources>
