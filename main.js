@@ -17,19 +17,23 @@ const elements = {
   loaded: document.querySelector('#loaded-count'),
   preview: document.querySelector('#queue-preview'), sync: document.querySelector('#sync-label'),
   playButton: document.querySelector('#play-button'), playIcon: document.querySelector('#play-icon'), playLabel: document.querySelector('#play-label'), playbackStatus: document.querySelector('#playback-status'),
-  queueTab: document.querySelector('#queue-tab'), settingsTab: document.querySelector('#settings-tab'), queueView: document.querySelector('#queue-view'), settingsView: document.querySelector('#settings-view'),
+  queueTab: document.querySelector('#queue-tab'), settingsTab: document.querySelector('#settings-tab'), updateTab: document.querySelector('#update-tab'), queueView: document.querySelector('#queue-view'), settingsView: document.querySelector('#settings-view'), updateView: document.querySelector('#update-view'),
   intervalValue: document.querySelector('#interval-value'), intervalUnit: document.querySelector('#interval-unit'), intervalOutput: document.querySelector('#interval-output'), desktopToggle: document.querySelector('#desktop-toggle'), lockToggle: document.querySelector('#lock-toggle'), menuButton: document.querySelector('#menu-button'), panelClose: document.querySelector('#panel-close'), queuePanel: document.querySelector('#queue-panel')
 };
 
 function updateIntervalLabel() { elements.intervalOutput.textContent = `${state.intervalValue} ${state.intervalUnit}`; }
 function selectPanel(panel) {
   const settingsOpen = panel === 'settings';
-  elements.queueView.hidden = settingsOpen;
+  const updateOpen = panel === 'update';
+  elements.queueView.hidden = settingsOpen || updateOpen;
   elements.settingsView.hidden = !settingsOpen;
-  elements.queueTab.classList.toggle('is-active', !settingsOpen);
+  elements.updateView.hidden = !updateOpen;
+  elements.queueTab.classList.toggle('is-active', !settingsOpen && !updateOpen);
   elements.settingsTab.classList.toggle('is-active', settingsOpen);
-  elements.queueTab.setAttribute('aria-selected', String(!settingsOpen));
+  elements.updateTab.classList.toggle('is-active', updateOpen);
+  elements.queueTab.setAttribute('aria-selected', String(!settingsOpen && !updateOpen));
   elements.settingsTab.setAttribute('aria-selected', String(settingsOpen));
+  elements.updateTab.setAttribute('aria-selected', String(updateOpen));
 }
 function togglePanel(open) {
   elements.queuePanel.classList.toggle('is-open', open);
@@ -180,6 +184,7 @@ document.querySelector('#fullscreen-button').addEventListener('click', () => doc
 document.querySelector('#refresh-button').addEventListener('click', loadQueue);
 elements.queueTab.addEventListener('click', () => selectPanel('queue'));
 elements.settingsTab.addEventListener('click', () => selectPanel('settings'));
+elements.updateTab.addEventListener('click', () => selectPanel('update'));
 elements.menuButton.addEventListener('click', () => togglePanel(!elements.queuePanel.classList.contains('is-open')));
 elements.panelClose.addEventListener('click', () => togglePanel(false));
 function saveInterval() { state.intervalValue = Math.max(1, Number(elements.intervalValue.value) || 1); state.intervalUnit = elements.intervalUnit.value; elements.intervalValue.value = state.intervalValue; localStorage.setItem('northlight-interval-value', state.intervalValue); localStorage.setItem('northlight-interval-unit', state.intervalUnit); updateIntervalLabel(); resetTimer(); }
@@ -187,12 +192,35 @@ elements.intervalValue.addEventListener('input', saveInterval);
 elements.intervalUnit.addEventListener('change', saveInterval);
 elements.desktopToggle.addEventListener('change', event => localStorage.setItem('northlight-desktop-wallpaper', event.target.checked));
 elements.lockToggle.addEventListener('change', event => localStorage.setItem('northlight-lock-wallpaper', event.target.checked));
+const updateStatus = document.querySelector('#update-status');
+const updateDetail = document.querySelector('#update-detail');
+const updateDot = document.querySelector('#update-dot');
+const downloadUpdateLink = document.querySelector('#download-update-link');
+async function checkForUpdates() {
+  updateStatus.textContent = 'Checking for updates';
+  updateDetail.textContent = 'Looking at the latest Gidlight release.';
+  try {
+    const response = await fetch('https://api.github.com/repos/gi-deom/project100/releases/latest', { headers: { Accept: 'application/vnd.github+json' } });
+    if (!response.ok) throw new Error('Release lookup failed');
+    const release = await response.json();
+    updateStatus.textContent = `Latest release ${release.tag_name}`;
+    updateDetail.textContent = 'You are using the live hosted version.';
+    updateDot.classList.add('is-current');
+    downloadUpdateLink.hidden = false;
+    downloadUpdateLink.href = release.html_url;
+  } catch (error) {
+    updateStatus.textContent = 'Update check unavailable';
+    updateDetail.textContent = 'Connect to the internet and try again.';
+  }
+}
+document.querySelector('#check-update-button').addEventListener('click', checkForUpdates);
 document.addEventListener('keydown', event => { if (event.key === 'ArrowRight') nextImage(); if (event.key === 'ArrowLeft') previousImage(); if (event.key === ' ') { event.preventDefault(); togglePlay(); } if (event.key === 'Escape') togglePanel(false); });
 elements.intervalValue.value = state.intervalValue;
 elements.intervalUnit.value = state.intervalUnit;
 elements.desktopToggle.checked = localStorage.getItem('northlight-desktop-wallpaper') !== 'false';
 elements.lockToggle.checked = localStorage.getItem('northlight-lock-wallpaper') !== 'false';
 updateIntervalLabel();
+checkForUpdates();
 loadQueue({ reset: true });
 state.archiveTimer = setInterval(() => loadQueue(), 15 * 60 * 1000);
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');

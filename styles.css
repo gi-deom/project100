@@ -57,6 +57,14 @@ h1 { max-width: 680px; margin: 0; font-family: var(--serif); font-size: clamp(48
 .panel-tabs { display: flex; gap: 24px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
 .tab-button { padding: 0 0 13px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); font-size: 11px; font-weight: 700; }
 .tab-button.is-active { border-color: var(--lime); color: #edf2e9; }
+.update-view { min-height: 100%; }
+.update-card { display: flex; gap: 13px; align-items: flex-start; margin-top: 55px; padding: 17px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.update-card strong { display: block; color: #edf2e9; font-size: 12px; }
+.update-card p { margin: 7px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.update-dot { width: 8px; height: 8px; flex: 0 0 auto; margin-top: 4px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 4px rgba(215,243,77,.13); }
+.update-dot.is-current { background: #7fe3b2; box-shadow: 0 0 0 4px rgba(127,227,178,.13); }
+.button--update { margin-top: 28px; background: var(--lime); color: var(--ink); }
+.update-link { display: inline-block; margin-top: 18px; color: var(--lime); font-size: 11px; font-weight: 700; text-decoration: none; }
 .settings-view { min-height: 100%; }
 .settings-form { margin-top: 55px; }
 .setting-control { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin: 0 0 18px; color: #edf2e9; font-size: 12px; }

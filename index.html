@@ -64,6 +64,7 @@
         <nav class="panel-tabs" aria-label="Wallpaper views">
           <button class="tab-button is-active" id="queue-tab" type="button" aria-selected="true">Queue</button>
           <button class="tab-button" id="settings-tab" type="button" aria-selected="false">Settings</button>
+          <button class="tab-button" id="update-tab" type="button" aria-selected="false">Update</button>
         </nav>
         <div id="queue-view">
         <div class="panel-heading">
@@ -108,6 +109,20 @@
             <div class="setting-control"><span>Lock-screen wallpaper</span><input id="lock-toggle" type="checkbox" checked /></div>
             <p class="settings-note">Install the companion desktop app to apply the active photo to your desktop and lock screen. A hosted browser tab cannot change operating-system wallpaper settings by itself.</p>
           </div>
+        </section>
+
+        <section class="settings-view update-view" id="update-view" hidden>
+          <p class="eyebrow eyebrow--dark">Software</p>
+          <h2>Stay current,<br /><em>without leaving.</em></h2>
+          <div class="update-card">
+            <span class="update-dot" id="update-dot"></span>
+            <div>
+              <strong id="update-status">Checking for updates</strong>
+              <p id="update-detail">Looking at the latest Gidlight release.</p>
+            </div>
+          </div>
+          <button class="button button--update" id="check-update-button" type="button">Check for updates</button>
+          <a class="update-link" id="download-update-link" href="https://github.com/gi-deom/project100/releases/latest" target="_blank" rel="noreferrer" hidden>Open latest release ↗</a>
         </section>
 
         <footer class="panel-footer">

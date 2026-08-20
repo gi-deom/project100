@@ -9,6 +9,7 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingStart="24dp" android:paddingEnd="24dp">
         <Button android:id="@+id/queueTab" style="@style/GidlightTab" android:text="Queue" />
         <Button android:id="@+id/settingsTab" style="@style/GidlightTab" android:text="Settings" />
+        <Button android:id="@+id/updateTab" style="@style/GidlightTab" android:text="Update" />
     </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:background="#26302B" />
     <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
@@ -33,6 +34,15 @@
                 <Switch android:id="@+id/desktopToggle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Home screen" android:checked="true" android:textColor="#EDF2E9" />
                 <Switch android:id="@+id/lockToggle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lock screen" android:checked="true" android:textColor="#EDF2E9" />
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="The Android wallpaper picker confirms the final target. Gidlight never bypasses device permissions." android:textColor="#89938B" android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/updateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+                <TextView style="@style/GidlightEyebrow" android:text="SOFTWARE" />
+                <TextView style="@style/GidlightTitle" android:text="Stay current,\nwithout leaving." />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:paddingTop="16dp" android:paddingBottom="16dp" android:orientation="vertical" android:background="#111615">
+                    <TextView android:id="@+id/updateStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gidlight 1.0.0" android:textColor="#EDF2E9" android:textSize="13sp" />
+                    <TextView android:id="@+id/updateDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="Check GitHub for the latest Android release." android:textColor="#89938B" android:textSize="12sp" />
+                </LinearLayout>
+                <Button android:id="@+id/checkUpdateButton" style="@style/GidlightPrimaryButton" android:text="Check for updates" />
             </LinearLayout>
         </FrameLayout>
     </ScrollView>

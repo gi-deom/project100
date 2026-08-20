@@ -12,6 +12,7 @@ import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.Switch
 import android.widget.TextView
+import android.net.Uri
 
 class MainActivity : Activity() {
     private val preferences by lazy { getSharedPreferences("gidlight", MODE_PRIVATE) }
@@ -24,8 +25,13 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
         val queueView = findViewById<LinearLayout>(R.id.queueView)
         val settingsView = findViewById<LinearLayout>(R.id.settingsView)
-        findViewById<Button>(R.id.queueTab).setOnClickListener { queueView.visibility = View.VISIBLE; settingsView.visibility = View.GONE }
-        findViewById<Button>(R.id.settingsTab).setOnClickListener { queueView.visibility = View.GONE; settingsView.visibility = View.VISIBLE }
+        val updateView = findViewById<LinearLayout>(R.id.updateView)
+        findViewById<Button>(R.id.settingsTab).setOnClickListener { queueView.visibility = View.GONE; settingsView.visibility = View.VISIBLE; updateView.visibility = View.GONE }
+        findViewById<Button>(R.id.updateTab).setOnClickListener { queueView.visibility = View.GONE; settingsView.visibility = View.GONE; updateView.visibility = View.VISIBLE }
+        findViewById<Button>(R.id.queueTab).setOnClickListener { queueView.visibility = View.VISIBLE; settingsView.visibility = View.GONE; updateView.visibility = View.GONE }
+        findViewById<Button>(R.id.checkUpdateButton).setOnClickListener {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/gi-deom/project100/releases/latest")))
+        }
         intervalValue = findViewById(R.id.intervalValue)
         intervalUnit = findViewById(R.id.intervalUnit)
         intervalSummary = findViewById(R.id.intervalSummary)
