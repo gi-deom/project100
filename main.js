@@ -57,6 +57,13 @@ async function fetchBingVideo() {
   return matches.map(match => ({ url: match[0].replaceAll('\\u0026', '&'), type: 'video', title: 'Bing motion wallpaper', location: 'Bing homepage video' }));
 }
 
+async function fetchPublishedArchive() {
+  const response = await fetch('./data/bing-images.json', { cache: 'no-store' });
+  if (!response.ok) throw new Error('Published archive unavailable');
+  const data = await response.json();
+  return Array.isArray(data.images) ? data.images : [];
+}
+
 async function loadQueue({ reset = false } = {}) {
   if (state.isLoading) return;
   state.isLoading = true;
@@ -64,15 +71,18 @@ async function loadQueue({ reset = false } = {}) {
   const images = [];
   const seen = new Set();
   try {
-    const requests = bingMarkets.flatMap(market => Array.from({ length: 24 }, (_, index) => fetchBatch(index, market)));
+    const publishedImages = await fetchPublishedArchive();
+    const requests = publishedImages.length ? [] : bingMarkets.flatMap(market => Array.from({ length: 24 }, (_, index) => fetchBatch(index, market)));
     const batches = await Promise.allSettled(requests);
-    batches.forEach(result => (result.status === 'fulfilled' ? result.value : []).forEach(image => {
+    publishedImages.concat(batches.flatMap(result => result.status === 'fulfilled' ? result.value : [])).forEach(image => {
       if (!seen.has(image.url)) { seen.add(image.url); images.push(image); }
-    }));
-    const videoResult = await Promise.allSettled([fetchBingVideo()]);
-    videoResult.forEach(result => (result.status === 'fulfilled' ? result.value : []).forEach(video => {
-      if (!seen.has(video.url)) { seen.add(video.url); images.unshift(video); }
-    }));
+    });
+    if (!publishedImages.length) {
+      const videoResult = await Promise.allSettled([fetchBingVideo()]);
+      videoResult.forEach(result => (result.status === 'fulfilled' ? result.value : []).forEach(video => {
+        if (!seen.has(video.url)) { seen.add(video.url); images.unshift(video); }
+      }));
+    }
     if (!images.length) throw new Error('No images returned');
     const existingUrls = new Set(state.queue.map(image => image.url));
     const newImages = images.filter(image => !existingUrls.has(image.url));

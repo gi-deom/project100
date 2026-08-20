@@ -1,0 +1,31 @@
+name: Refresh Bing archive
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Fetch current Bing archive
+        shell: bash
+        run: |
+          mkdir -p data
+          curl --fail --silent --show-error 'https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&mkt=en-US' \
+            | jq --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{updatedAt: $now, images: [.images[] | {url: ("https://www.bing.com" + .url), type: "image", title: (.title // "Bing wallpaper"), location: (.copyright // "Bing Image Archive")}]}' \
+            > data/bing-images.json
+      - name: Commit archive snapshot
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/bing-images.json
+          git diff --cached --quiet || git commit -m "Refresh Bing wallpaper archive"
+          git push
