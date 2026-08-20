@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gidlight</string>
+    <string name="wallpaper_description">Bing wallpaper slideshow</string>
+    <string name="open_wallpaper_picker">Choose Gidlight as your live wallpaper</string>
+</resources>

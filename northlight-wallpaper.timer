@@ -1,0 +1,10 @@
+[Unit]
+Description=Update Gidlight wallpaper periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=8min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

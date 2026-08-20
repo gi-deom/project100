@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Gidlight Wallpaper
+Comment=Bing wallpaper slideshow and desktop wallpaper updater
+Exec=sh -c 'cd "$(dirname "%k")" && xdg-open index.html'
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Categories=Graphics;Utility;

@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Gidlight" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#D7F34D</item>
+        <item name="android:navigationBarColor">#080B0B</item>
+        <item name="android:statusBarColor">#080B0B</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

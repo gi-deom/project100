@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101313" />
+    <meta name="description" content="A calm, endlessly updating Bing wallpaper slideshow for your screen." />
+    <title>Gidlight | Bing Wallpaper Slideshow</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="stage" aria-label="Wallpaper slideshow">
+        <div class="image-layer image-layer--back" aria-hidden="true"></div>
+        <div class="image-layer image-layer--current" aria-hidden="true"></div>
+        <video class="video-layer video-layer--back" muted loop playsinline aria-hidden="true"></video>
+        <video class="video-layer video-layer--current" muted loop playsinline aria-hidden="true"></video>
+        <div class="stage-wash" aria-hidden="true"></div>
+
+        <header class="topbar">
+          <a class="brand" href="./" aria-label="Gidlight home">
+            <span class="brand-mark">G</span>
+            <span>gidlight</span>
+          </a>
+          <div class="topbar-meta">
+            <span class="live-dot"></span>
+            <span id="sync-label">Connecting to Bing</span>
+          </div>
+          <button class="menu-button" id="menu-button" type="button" aria-label="Open queue and settings" aria-expanded="false">
+            <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span>
+          </button>
+        </header>
+
+        <div class="stage-content">
+          <p class="eyebrow">Bing daily wallpaper</p>
+          <h1 id="image-title">Finding the quiet edge of the world.</h1>
+          <p class="image-caption" id="image-caption">Bing daily wallpaper archive</p>
+          <div class="stage-actions">
+            <button class="button button--light" id="play-button" type="button" aria-label="Pause slideshow">
+              <span class="button-icon" id="play-icon">Ⅱ</span>
+              <span id="play-label">Pause slideshow</span>
+            </button>
+            <button class="icon-button icon-button--light" id="fullscreen-button" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+
+        <div class="stage-footer">
+          <div class="footer-row">
+            <span class="location-label" id="image-location">Loading today’s view</span>
+            <div class="slide-controls">
+              <button class="icon-button icon-button--light" id="previous-button" type="button" aria-label="Previous wallpaper">←</button>
+              <button class="icon-button icon-button--light" id="next-button" type="button" aria-label="Next wallpaper">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="queue-panel" id="queue-panel" aria-label="Slideshow controls" aria-hidden="true">
+        <button class="panel-close" id="panel-close" type="button" aria-label="Close queue and settings">×</button>
+        <nav class="panel-tabs" aria-label="Wallpaper views">
+          <button class="tab-button is-active" id="queue-tab" type="button" aria-selected="true">Queue</button>
+          <button class="tab-button" id="settings-tab" type="button" aria-selected="false">Settings</button>
+        </nav>
+        <div id="queue-view">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow eyebrow--dark">Your queue</p>
+            <h2>Open archive,<br /><em>none repeated.</em></h2>
+          </div>
+          <button class="icon-button icon-button--dark" id="refresh-button" type="button" aria-label="Refresh wallpaper queue">↻</button>
+        </div>
+
+        <div class="queue-stats">
+          <div><strong id="loaded-count">0</strong><span>loaded</span></div>
+          <div><strong>∞</strong><span>available</span></div>
+          <div><strong>↻</strong><span>continuous</span></div>
+        </div>
+
+        <div class="queue-preview" id="queue-preview" aria-label="Wallpaper queue previews"></div>
+
+        <div class="settings-block">
+          <div class="setting-row"><span>Playback</span><span class="status-pill" id="playback-status">Automatic</span></div>
+        </div>
+        </div>
+
+        <section class="settings-view" id="settings-view" hidden>
+          <p class="eyebrow eyebrow--dark">Preferences</p>
+          <h2>Set the rhythm<br /><em>of the room.</em></h2>
+          <div class="settings-form">
+            <div class="setting-control setting-control--stacked">
+              <label for="interval-value">Change photo every</label>
+              <div class="duration-input">
+                <input id="interval-value" type="number" min="1" value="8" inputmode="numeric" />
+                <select id="interval-unit" aria-label="Interval unit">
+                  <option value="seconds">Seconds</option>
+                  <option value="minutes" selected>Minutes</option>
+                  <option value="hours">Hours</option>
+                  <option value="days">Days</option>
+                </select>
+              </div>
+              <output id="interval-output">8 minutes</output>
+            </div>
+            <div class="setting-control"><span>Desktop wallpaper</span><input id="desktop-toggle" type="checkbox" checked /></div>
+            <div class="setting-control"><span>Lock-screen wallpaper</span><input id="lock-toggle" type="checkbox" checked /></div>
+            <p class="settings-note">Install the companion desktop app to apply the active photo to your desktop and lock screen. A hosted browser tab cannot change operating-system wallpaper settings by itself.</p>
+          </div>
+        </section>
+
+        <footer class="panel-footer">
+          <span class="source-label">Source</span>
+          <a href="https://www.bing.com/gallery/" target="_blank" rel="noreferrer">Bing Image Archive ↗</a>
+        </footer>
+      </aside>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

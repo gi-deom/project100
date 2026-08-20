@@ -1,0 +1,7 @@
+[Unit]
+Description=Gidlight Bing wallpaper updater
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/northlight-wallpaper.py
