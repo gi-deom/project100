@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-22T06:58:29Z",
+  "updatedAt": "2026-08-22T12:59:59Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.CommonBlue_EN-US2760688799_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Sky tinted wings",
+      "location": "Common blue butterfly, Devon, England (© Ross Hoddinott/Nature Picture Library)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.JulierPass_EN-US2643379571_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The great balancing act",
       "location": "Hoodoos in Ah Shi Sle Pah Wilderness in San Juan County, New Mexico (© Westend61/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.WildlifeCrossingPoland_EN-US5004733603_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Built for paws, not people",
-      "location": "Aerial view of a wildlife crossing near Zakrzów, Poland (© bbsferrari/Getty Images)"
     }
   ]
 }
