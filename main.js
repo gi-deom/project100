@@ -1,5 +1,6 @@
 const BING_ENDPOINT = 'https://www.bing.com/HPImageArchive.aspx?format=js&idx=';
 const bingMarkets = ['en-US', 'en-GB', 'en-CA', 'en-AU', 'de-DE', 'fr-FR', 'it-IT', 'es-ES', 'pt-BR', 'ja-JP', 'ko-KR', 'zh-CN', 'sv-SE'];
+const motionSearches = ['landscape', 'waterfall', 'clouds timelapse', 'ocean waves', 'forest nature'];
 const fallbackImages = Array.from({ length: 1000 }, (_, index) => ({
   url: `https://picsum.photos/seed/gidlight-${index + 1}/1800/1200`,
   type: 'image',
@@ -7,8 +8,13 @@ const fallbackImages = Array.from({ length: 1000 }, (_, index) => ({
   location: 'Gidlight demo archive'
 }));
 
-const savedInterval = Number(localStorage.getItem('northlight-interval-value')) || 8;
-const savedUnit = localStorage.getItem('northlight-interval-unit') || 'minutes';
+const intervalVersion = '30-second-default-v1';
+const hasCurrentInterval = localStorage.getItem('northlight-interval-version') === intervalVersion;
+const savedInterval = hasCurrentInterval ? (Number(localStorage.getItem('northlight-interval-value')) || 30) : 30;
+const savedUnit = hasCurrentInterval ? (localStorage.getItem('northlight-interval-unit') || 'seconds') : 'seconds';
+localStorage.setItem('northlight-interval-version', intervalVersion);
+localStorage.setItem('northlight-interval-value', String(savedInterval));
+localStorage.setItem('northlight-interval-unit', savedUnit);
 const unitSeconds = { seconds: 1, minutes: 60, hours: 3600, days: 86400 };
 const state = { queue: [], currentIndex: 0, secondsLeft: savedInterval * unitSeconds[savedUnit], intervalValue: savedInterval, intervalUnit: savedUnit, isPlaying: true, timer: null, archiveTimer: null, isLoading: false, imageCache: new Map(), transitionToken: 0 };
 const elements = {
@@ -57,6 +63,28 @@ async function fetchBingVideo() {
   return matches.map(match => ({ url: match[0].replaceAll('\\u0026', '&'), type: 'video', title: 'Bing motion wallpaper', location: 'Bing homepage video' }));
 }
 
+async function fetchMotionWallpapers(searchTerm) {
+  const parameters = new URLSearchParams({
+    action: 'query', generator: 'search', gsrsearch: `${searchTerm} filetype:video`,
+    gsrnamespace: '6', gsrlimit: '50', prop: 'imageinfo', iiprop: 'url|mime',
+    iiurlwidth: '1280', format: 'json', origin: '*'
+  });
+  const response = await fetch(`https://commons.wikimedia.org/w/api.php?${parameters}`);
+  if (!response.ok) throw new Error('Motion wallpaper archive unavailable');
+  const data = await response.json();
+  return Object.values(data.query?.pages || {}).flatMap(page => {
+    const info = page.imageinfo?.[0];
+    if (!info || !['video/webm', 'video/mp4'].includes(info.mime)) return [];
+    return [{
+      url: info.url,
+      poster: info.thumburl || '',
+      type: 'video',
+      title: page.title.replace(/^File:/, '').replace(/\.[^.]+$/, '').replaceAll('_', ' '),
+      location: 'Animated nature wallpaper · Wikimedia Commons'
+    }];
+  });
+}
+
 async function fetchPublishedArchive() {
   const response = await fetch('./data/bing-images.json', { cache: 'no-store' });
   if (!response.ok) throw new Error('Published archive unavailable');
@@ -77,12 +105,10 @@ async function loadQueue({ reset = false } = {}) {
     publishedImages.concat(batches.flatMap(result => result.status === 'fulfilled' ? result.value : [])).forEach(image => {
       if (!seen.has(image.url)) { seen.add(image.url); images.push(image); }
     });
-    if (!publishedImages.length) {
-      const videoResult = await Promise.allSettled([fetchBingVideo()]);
-      videoResult.forEach(result => (result.status === 'fulfilled' ? result.value : []).forEach(video => {
-        if (!seen.has(video.url)) { seen.add(video.url); images.unshift(video); }
-      }));
-    }
+    const motionResults = await Promise.allSettled([fetchBingVideo(), ...motionSearches.map(fetchMotionWallpapers)]);
+    motionResults.forEach(result => (result.status === 'fulfilled' ? result.value : []).forEach(video => {
+      if (!seen.has(video.url)) { seen.add(video.url); images.unshift(video); }
+    }));
     if (!images.length) throw new Error('No images returned');
     const existingUrls = new Set(state.queue.map(image => image.url));
     const newImages = images.filter(image => !existingUrls.has(image.url));
@@ -92,7 +118,8 @@ async function loadQueue({ reset = false } = {}) {
     } else {
       state.queue = [...state.queue, ...newImages];
     }
-    elements.sync.textContent = newImages.length ? `Bing updated · ${newImages.length} new` : 'Bing archive synced';
+    const motionCount = images.filter(item => item.type === 'video').length;
+    elements.sync.textContent = motionCount ? `Online · ${motionCount} animated wallpapers` : 'Bing archive synced';
   } catch (error) {
     if (reset || !state.queue.length) {
       state.queue = fallbackImages;
@@ -114,7 +141,7 @@ async function loadQueue({ reset = false } = {}) {
 
 function renderQueue() {
   elements.loaded.textContent = String(state.queue.length);
-  elements.preview.innerHTML = state.queue.slice(0, 12).map((image, index) => `<button class="preview-tile${index === state.currentIndex ? ' is-active' : ''}" style="background-image:url('${image.url}')" data-index="${index}" aria-label="View wallpaper ${index + 1}"></button>`).join('');
+  elements.preview.innerHTML = state.queue.slice(0, 12).map((item, index) => `<button class="preview-tile${index === state.currentIndex ? ' is-active' : ''}" style="background-image:url('${item.poster || item.url}')" data-index="${index}" aria-label="View ${item.type === 'video' ? 'animated ' : ''}wallpaper ${index + 1}"></button>`).join('');
   elements.preview.querySelectorAll('[data-index]').forEach(button => button.addEventListener('click', () => { state.currentIndex = Number(button.dataset.index); showImage(); resetTimer(); }));
 }
 
@@ -149,8 +176,9 @@ async function showImage() {
   const image = state.queue[state.currentIndex];
   if (!image) return;
   const transitionToken = ++state.transitionToken;
-  await preloadImage(image);
+  const loaded = await preloadImage(image);
   if (transitionToken !== state.transitionToken) return;
+  if (!loaded) { nextImage(); return; }
   if (image.type === 'video') {
     elements.videoBack.src = image.url;
     elements.videoBack.classList.add('is-visible');
@@ -174,7 +202,7 @@ async function showImage() {
     elements.back.classList.remove('is-visible');
   }
   elements.title.textContent = image.title;
-  elements.caption.textContent = 'Bing daily wallpaper archive';
+  elements.caption.textContent = image.type === 'video' ? 'Online animated wallpaper' : 'Bing daily wallpaper archive';
   elements.location.textContent = image.location;
   document.querySelectorAll('.preview-tile').forEach((tile, index) => tile.classList.toggle('is-active', index === state.currentIndex));
   elements.current.style.animation = 'none';

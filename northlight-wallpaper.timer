@@ -2,9 +2,10 @@
 Description=Update Gidlight wallpaper periodically
 
 [Timer]
-OnBootSec=2min
-OnUnitActiveSec=8min
+OnStartupSec=10sec
+OnUnitActiveSec=30sec
 Persistent=true
+AccuracySec=1sec
 
 [Install]
 WantedBy=timers.target

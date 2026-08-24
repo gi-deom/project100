@@ -4,11 +4,13 @@ A dependency-free Bing wallpaper slideshow. It requests the Bing Image Archive a
 
 The slideshow checks Bing automatically every 15 minutes. New wallpaper URLs are merged into the existing queue without restarting playback or repeating an image. The refresh button performs the same update immediately.
 
-When Bing exposes a homepage motion background, the loader recognizes MP4 and WebM URLs as video slides. They play muted, loop, and crossfade like image slides. Bing does not publish motion backgrounds through the historical `HPImageArchive` endpoint, and some regional homepage responses omit the video URL, so video slides appear only when Bing makes that media URL available to the browser.
+Animated wallpapers are loaded online from Bing when its homepage exposes a motion background and from several Wikimedia Commons nature-video categories. Up to 250 current landscape, ocean, waterfall, cloud, and forest candidates are requested without an API key. Browser-supported MP4 and WebM files play muted and loop in the slideshow; unavailable or unsupported files are skipped automatically.
+
+Animated wallpaper works in the browser and fullscreen modes. Native XFCE desktop video requires an additional X11 embedding utility such as `xwinwrap`; the installed static desktop/lock-screen updater continues using Bing photos when that utility is unavailable.
 
 ## Kali Linux application
 
-The web interface includes a Settings tab where the slideshow interval can be set from 1 to 120 minutes. Preferences are saved in the browser.
+The web interface changes wallpaper every 30 seconds by default. The interval can still be customized in Settings, and preferences are saved in the browser.
 
 For Kali Linux desktop and lock-screen wallpaper updates, make the installer executable and run it from this folder:
 
@@ -17,7 +19,9 @@ chmod +x install-kali.sh
 ./install-kali.sh
 ```
 
-This installs a `Gidlight Wallpaper` application launcher and a systemd user timer. The timer fetches the newest Bing image and applies it using XFCE (Kali's usual desktop), GNOME, or KDE commands when available. The browser settings control the web slideshow; the native updater uses an 8-minute system timer.
+This installs a `Gidlight Wallpaper` application launcher and a persistent systemd user timer. It rotates through Bing's curated high-resolution wallpapers every 30 seconds, updates every XFCE monitor/workspace (or GNOME/KDE), starts again automatically after login/restart, and catches up after the computer has been off. XFCE displays its lock dialog over the current desktop, so the same current image is visible there; GNOME receives a separate lock-screen setting. The browser settings control only the web slideshow.
+
+The slideshow cannot literally run while the computer is shut down. The persistent timer resumes automatically at the next login and immediately catches up with a missed run.
 
 ## Windows application
 
