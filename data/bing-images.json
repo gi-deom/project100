@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-25T01:51:54Z",
+  "updatedAt": "2026-08-25T07:07:24Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.RedwoodPark_EN-US3199427613_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Protecting America's treasures",
+      "location": "Sunrise in Redwood National and State Parks, California (© HadelProductions/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.BKBridge_EN-US2923468858_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Geometry of a star city",
       "location": "Aerial view of Palmanova, a fortress city in Friuli, Italy (© Riccardo Saponi/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.CabilaoClowns_EN-US6302440247_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A prime 'reef' estate",
-      "location": "Three false clownfish in a sea anemone, Cabilao Island, Bohol, Philippines (© Franco Banfi/Nature Picture Library)"
     }
   ]
 }
