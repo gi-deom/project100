@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-27T22:14:57Z",
+  "updatedAt": "2026-08-28T11:21:47Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.MichelSunset_EN-US3527235033_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Where tides shape a legend",
+      "location": "Mont-Saint-Michel during high tide, Manche, Normandy, France (© Clement LEONARD/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.LakeMagadi_EN-US3401664434_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The climb is calling",
       "location": "Winding road of Julier Pass, Switzerland (© Westend61/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.LynnCanalOrca_EN-US0537229184_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Voices of the pod",
-      "location": "An orca surfaces in Lynn Canal near the Chilkat Mountains, Alaska (© John Hyde/Alamy)"
     }
   ]
 }
