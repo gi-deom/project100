@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-28T22:18:00Z",
+  "updatedAt": "2026-08-29T07:03:18Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.SantaCatarina_EN-US3600536393_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Reading between the waves",
+      "location": "Aerial view of surfers, Santa Catarina, Brazil (© Wonderful Nature/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.MichelSunset_EN-US3527235033_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Sky tinted wings",
       "location": "Common blue butterfly, Devon, England (© Ross Hoddinott/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.JulierPass_EN-US2643379571_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "The climb is calling",
-      "location": "Winding road of Julier Pass, Switzerland (© Westend61/Getty Images)"
     }
   ]
 }
