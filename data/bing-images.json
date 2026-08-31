@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-31T05:32:29Z",
+  "updatedAt": "2026-08-31T13:46:41Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.SamarkandCeiling_EN-US3761829748_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A master class in pattern",
+      "location": "Building detail of Registan Square, Samarkand, Uzbekistan (© Piero M. Bianchi/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.YellowShark_EN-US3678567058_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Crossing into history",
       "location": "Brooklyn Bridge, New York City (© shayes17/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.KatmaiBear_EN-US2844742219_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Meet Katmai's fishing giants",
-      "location": "Brown bear fishing in river, Katmai National Park, Alaska (© Pal Hermansen/Nature Picture Library)"
     }
   ]
 }
