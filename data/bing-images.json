@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-01T05:05:58Z",
+  "updatedAt": "2026-09-01T11:38:07Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.HorseHairShroom_EN-US3885857486_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A world beneath your feet",
+      "location": "Horsehair parachute fungus, Belarus (© Máté/Nature Picture Library)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.SamarkandCeiling_EN-US3761829748_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Protecting America's treasures",
       "location": "Sunrise in Redwood National and State Parks, California (© HadelProductions/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.BKBridge_EN-US2923468858_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Crossing into history",
-      "location": "Brooklyn Bridge, New York City (© shayes17/Getty Images)"
     }
   ]
 }
