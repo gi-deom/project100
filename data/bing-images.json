@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-03T04:21:44Z",
+  "updatedAt": "2026-09-03T11:12:41Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AZWilderness_EN-US4070936347_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "An act of wilderness",
+      "location": "Coyote Buttes, Vermilion Cliffs National Monument, Arizona (© James Hager/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.SuffolkHuts_EN-US3987062531_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Water, wildlife, and wonder",
       "location": "Lesser flamingo flock at sunrise, Lake Magadi, Kenya (© Denis-Huot/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AurorasIceland_EN-US3293282785_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A sky alive with color",
-      "location": "Auroras over Kirkjufell, Iceland (© Cavan Images/Alamy)"
     }
   ]
 }
