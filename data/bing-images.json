@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-05T04:26:10Z",
+  "updatedAt": "2026-09-05T10:33:33Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.GreenCrowned_EN-US3119017947_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Small birds, big impact",
+      "location": "Green-crowned brilliant hummingbirds feeding on lobster-claw flowers, Costa Rica (© Paul Hobson/Nature Picture Library)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.Westerheversand_EN-US3028839945_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Reading between the waves",
       "location": "Aerial view of surfers, Santa Catarina, Brazil (© Wonderful Nature/Shutterstock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.MichelSunset_EN-US3527235033_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where tides shape a legend",
-      "location": "Mont-Saint-Michel during high tide, Manche, Normandy, France (© Clement LEONARD/Getty Images)"
     }
   ]
 }
