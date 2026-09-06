@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-06T04:36:40Z",
+  "updatedAt": "2026-09-06T10:54:55Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.LakeFyans_EN-US4295341714_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A reservoir of reflections",
+      "location": "Lake Fyans, Grampians National Park, Victoria, Australia (© tracielouise/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.GreenCrowned_EN-US3119017947_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The fish that outgrew its name",
       "location": "Whale shark and golden trevally, Cenderawasih Bay, West Papua, Indonesia (© Pete Oxford/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SantaCatarina_EN-US3600536393_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Reading between the waves",
-      "location": "Aerial view of surfers, Santa Catarina, Brazil (© Wonderful Nature/Shutterstock)"
     }
   ]
 }
