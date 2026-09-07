@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-07T04:38:59Z",
+  "updatedAt": "2026-09-07T12:30:06Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.RalphStackpole_EN-US4463800234_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Labor's legacy",
+      "location": "'Industries of California' mural by Ralph Stackpole at Coit Tower, San Francisco, California (© David R. Frazier Photolibrary, Inc./Alamy)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.LakeFyans_EN-US4295341714_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A master class in pattern",
       "location": "Building detail of Registan Square, Samarkand, Uzbekistan (© Piero M. Bianchi/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.YellowShark_EN-US3678567058_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "The fish that outgrew its name",
-      "location": "Whale shark and golden trevally, Cenderawasih Bay, West Papua, Indonesia (© Pete Oxford/Nature Picture Library)"
     }
   ]
 }
