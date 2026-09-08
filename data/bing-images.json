@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-08T04:33:26Z",
+  "updatedAt": "2026-09-08T11:17:09Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.BeechEngland_EN-US4535769514_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Fields of gold",
+      "location": "Beech tree in a cereal field, East Meon, South Downs National Park, Hampshire, England (© Guy Edwardes/Minden Pictures)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.RalphStackpole_EN-US4463800234_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A world beneath your feet",
       "location": "Horsehair parachute fungus, Belarus (© Máté/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SamarkandCeiling_EN-US3761829748_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A master class in pattern",
-      "location": "Building detail of Registan Square, Samarkand, Uzbekistan (© Piero M. Bianchi/Getty Images)"
     }
   ]
 }
