@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-10T04:40:47Z",
+  "updatedAt": "2026-09-10T11:17:35Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.Olvera_EN-US4712443253_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A patchwork from above",
+      "location": "Aerial view of Olvera, Andalusia, Spain (© Marco Bottigelli/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.GabitKeni_EN-US4620523183_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "An act of wilderness",
       "location": "Coyote Buttes, Vermilion Cliffs National Monument, Arizona (© James Hager/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SuffolkHuts_EN-US3987062531_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Painted along the shore",
-      "location": "Traditional beach huts, Southwold, Suffolk Heritage Coast, England (© stevendocwra/Getty Images)"
     }
   ]
 }
