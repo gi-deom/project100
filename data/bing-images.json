@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-11T04:38:27Z",
+  "updatedAt": "2026-09-11T11:18:59Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.Flight93_EN-US5966783443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A legacy of heroism",
+      "location": "The Flight 93 National Memorial Visitor Center near Shanksville, Pennsylvania (© Maurice Savage/Alamy)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.Olvera_EN-US4712443253_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Red and white on the horizon",
       "location": "Westerheversand Lighthouse in Westerhever, Schleswig-Holstein, Germany (© bluejayphoto/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AZWilderness_EN-US4070936347_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "An act of wilderness",
-      "location": "Coyote Buttes, Vermilion Cliffs National Monument, Arizona (© James Hager/Getty Images)"
     }
   ]
 }
