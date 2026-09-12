@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-12T04:32:25Z",
+  "updatedAt": "2026-09-12T10:44:13Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.SardineBait_EN-US4802395270_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Masters of the surf and shore",
+      "location": "California sea lions hunting a sardine bait ball, offshore Mexico, Pacific Ocean (© Henley Spiers/Nature Picture Library)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.Flight93_EN-US5966783443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Small birds, big impact",
       "location": "Green-crowned brilliant hummingbirds feeding on lobster-claw flowers, Costa Rica (© Paul Hobson/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.Westerheversand_EN-US3028839945_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Red and white on the horizon",
-      "location": "Westerheversand Lighthouse in Westerhever, Schleswig-Holstein, Germany (© bluejayphoto/Getty Images)"
     }
   ]
 }
