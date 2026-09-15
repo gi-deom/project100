@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-15T04:52:39Z",
+  "updatedAt": "2026-09-15T11:42:30Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.FortUnion_EN-US5138724452_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A crossroad of cultures",
+      "location": "Fort Union National Monument, New Mexico (© zrfphoto/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.KochiaChina_EN-US5037126636_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Fields of gold",
       "location": "Beech tree in a cereal field, East Meon, South Downs National Park, Hampshire, England (© Guy Edwardes/Minden Pictures)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.RalphStackpole_EN-US4463800234_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Labor's legacy",
-      "location": "'Industries of California' mural by Ralph Stackpole at Coit Tower, San Francisco, California (© David R. Frazier Photolibrary, Inc./Alamy)"
     }
   ]
 }
