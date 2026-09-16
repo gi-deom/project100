@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-16T04:47:31Z",
+  "updatedAt": "2026-09-16T11:30:41Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.IcyCubs_EN-US5222104616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The Arctic's new explorers",
+      "location": "Polar bear cubs playing in Svalbard, Norway (© Danny Green/Nature Picture Library)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.FortUnion_EN-US5138724452_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Life on India's west coast",
       "location": "Gabit Keni Beach near Ankola, Karnataka, India (© Amith Nag Photography/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.BeechEngland_EN-US4535769514_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Fields of gold",
-      "location": "Beech tree in a cereal field, East Meon, South Downs National Park, Hampshire, England (© Guy Edwardes/Minden Pictures)"
     }
   ]
 }
