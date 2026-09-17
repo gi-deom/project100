@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-17T04:50:56Z",
+  "updatedAt": "2026-09-17T11:39:31Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.Santenay_EN-US5299702509_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A toast to the harvest",
+      "location": "Sorine windmill and vineyards, Santenay wine region, Côte de Beaune, Burgundy, France (© Marco Bottigelli/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.IcyCubs_EN-US5222104616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A patchwork from above",
       "location": "Aerial view of Olvera, Andalusia, Spain (© Marco Bottigelli/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.GabitKeni_EN-US4620523183_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Life on India's west coast",
-      "location": "Gabit Keni Beach near Ankola, Karnataka, India (© Amith Nag Photography/Getty Images)"
     }
   ]
 }
