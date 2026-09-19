@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-19T04:35:53Z",
+  "updatedAt": "2026-09-19T10:56:51Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AlphornBavaria_EN-US6200857270_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The Alpine sound of Oktoberfest",
+      "location": "Alphorn players, Bavaria, Germany (© U. J. Alexander/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.WinnatsPassPeak_EN-US6112068451_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Masters of the surf and shore",
       "location": "California sea lions hunting a sardine bait ball, offshore Mexico, Pacific Ocean (© Henley Spiers/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.Flight93_EN-US5966783443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A legacy of heroism",
-      "location": "The Flight 93 National Memorial Visitor Center near Shanksville, Pennsylvania (© Maurice Savage/Alamy)"
     }
   ]
 }
