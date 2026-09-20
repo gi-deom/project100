@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-20T04:52:29Z",
+  "updatedAt": "2026-09-20T11:21:15Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.ParisSunset_EN-US6532307523_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The tower that won Paris over",
+      "location": "Eiffel Tower at sunset, Paris, France (© Alexander Spatari/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AlphornBavaria_EN-US6200857270_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A reef above its station",
       "location": "Cadini di Misurina, Dolomites, Veneto, Italy (© Vithun Khamsong/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SardineBait_EN-US4802395270_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Masters of the surf and shore",
-      "location": "California sea lions hunting a sardine bait ball, offshore Mexico, Pacific Ocean (© Henley Spiers/Nature Picture Library)"
     }
   ]
 }
