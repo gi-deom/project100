@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-22T04:53:28Z",
+  "updatedAt": "2026-09-22T11:36:04Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.FallAspens_EN-US7211031109_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The golden season",
+      "location": "Fall aspen trees near Guardsman Pass, Utah, USA (© Danita Delimont/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.GroomingOtter_EN-US6710084372_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A crossroad of cultures",
       "location": "Fort Union National Monument, New Mexico (© zrfphoto/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.KochiaChina_EN-US5037126636_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where toughness takes root",
-      "location": "Field of kochia plants, China (© lingqi xie/Getty Images)"
     }
   ]
 }
