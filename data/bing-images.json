@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-23T04:43:28Z",
+  "updatedAt": "2026-09-23T11:33:46Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.TolkienWeek_EN-US7313336185_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Beyond the last page",
+      "location": "Hobbit house at Hobbiton Movie Set, Matamata, New Zealand (© djr-photography/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.FallAspens_EN-US7211031109_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The Arctic's new explorers",
       "location": "Polar bear cubs playing in Svalbard, Norway (© Danny Green/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.FortUnion_EN-US5138724452_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A crossroad of cultures",
-      "location": "Fort Union National Monument, New Mexico (© zrfphoto/Getty Images)"
     }
   ]
 }
