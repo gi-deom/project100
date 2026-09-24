@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-24T04:48:09Z",
+  "updatedAt": "2026-09-24T11:43:44Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.ElGolfo_EN-US9261454857_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Ash meets splash",
+      "location": "Aerial view of black lava beach, El Golfo, Lanzarote, Canary Islands, Spain (© Westend61/Adobe Stock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.TolkienWeek_EN-US7313336185_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A toast to the harvest",
       "location": "Sorine windmill and vineyards, Santenay wine region, Côte de Beaune, Burgundy, France (© Marco Bottigelli/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.IcyCubs_EN-US5222104616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "The Arctic's new explorers",
-      "location": "Polar bear cubs playing in Svalbard, Norway (© Danny Green/Nature Picture Library)"
     }
   ]
 }
