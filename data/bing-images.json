@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-25T04:55:39Z",
+  "updatedAt": "2026-09-25T11:50:17Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.MidAutumn2026_EN-US9341405351_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "When the moon joins the party",
+      "location": "Chinese lanterns for Mid-Autumn Festival celebration (© LeeYiuTung/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.ElGolfo_EN-US9261454857_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Through the heart of the pass",
       "location": "Winnats Pass, Peak District National Park, England (© Daniel_Kay/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.Santenay_EN-US5299702509_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A toast to the harvest",
-      "location": "Sorine windmill and vineyards, Santenay wine region, Côte de Beaune, Burgundy, France (© Marco Bottigelli/Getty Images)"
     }
   ]
 }
