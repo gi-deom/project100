@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-26T04:56:22Z",
+  "updatedAt": "2026-09-26T11:23:01Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.BearsEars_EN-US9429791451_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The stories written across the land",
+      "location": "Cedar Mesa and Muley Point near Bears Ears National Monument, Utah, USA (© Jeff Clay/Tandem Stills + Motion)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.MidAutumn2026_EN-US9341405351_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The Alpine sound of Oktoberfest",
       "location": "Alphorn players, Bavaria, Germany (© U. J. Alexander/Shutterstock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.WinnatsPassPeak_EN-US6112068451_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Through the heart of the pass",
-      "location": "Winnats Pass, Peak District National Park, England (© Daniel_Kay/Getty Images)"
     }
   ]
 }
