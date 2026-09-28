@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-28T05:22:15Z",
+  "updatedAt": "2026-09-28T13:51:42Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AmberHall_EN-US9930812541_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "History with a view",
+      "location": "Sattais Katcheri Hall in Amber Fort near Jaipur, Rajasthan, India (© R.M. Nunes/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.DecoCrab_EN-US9587426678_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Life between fur and sea",
       "location": "Sea otter grooming fur, Monterey Bay, California (© Suzi Eszterhas/Minden Pictures)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.ParisSunset_EN-US6532307523_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "The tower that won Paris over",
-      "location": "Eiffel Tower at sunset, Paris, France (© Alexander Spatari/Getty Images)"
     }
   ]
 }
