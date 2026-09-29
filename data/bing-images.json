@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-29T05:42:13Z",
+  "updatedAt": "2026-09-29T12:50:24Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.KasilofRiver_EN-US0047556055_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Born of glaciers",
+      "location": "The blue, glacier-fed waters of the Kasilof River, Alaska, USA (© jared lloyd/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AmberHall_EN-US9930812541_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The golden season",
       "location": "Fall aspen trees near Guardsman Pass, Utah, USA (© Danita Delimont/Shutterstock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.GroomingOtter_EN-US6710084372_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Life between fur and sea",
-      "location": "Sea otter grooming fur, Monterey Bay, California (© Suzi Eszterhas/Minden Pictures)"
     }
   ]
 }
