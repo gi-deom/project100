@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-02T05:34:55Z",
+  "updatedAt": "2026-10-02T12:32:19Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.ChattoogaRiver_EN-US5042787453_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A river worth protecting",
+      "location": "Chattooga River in the Appalachian Mountains, North Carolina (© mtilghma/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.OlmstedPoint_EN-US0964858045_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "When the moon joins the party",
       "location": "Chinese lanterns for Mid-Autumn Festival celebration (© LeeYiuTung/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.ElGolfo_EN-US9261454857_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Ash meets splash",
-      "location": "Aerial view of black lava beach, El Golfo, Lanzarote, Canary Islands, Spain (© Westend61/Adobe Stock)"
     }
   ]
 }
