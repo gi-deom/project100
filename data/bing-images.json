@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-06T06:18:26Z",
+  "updatedAt": "2026-10-06T18:20:28Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.DanxiaLandform_EN-US5459628079_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Earth's story in stripes",
+      "location": "Danxia landform, Zhangye National Geopark, Gansu, China (© Weiquan Lin/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AdelieTeacher_EN-US5343194378_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Born of glaciers",
       "location": "The blue, glacier-fed waters of the Kasilof River, Alaska, USA (© jared lloyd/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AmberHall_EN-US9930812541_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "History with a view",
-      "location": "Sattais Katcheri Hall in Amber Fort near Jaipur, Rajasthan, India (© R.M. Nunes/Getty Images)"
     }
   ]
 }
