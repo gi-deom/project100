@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-07T05:57:01Z",
+  "updatedAt": "2026-10-07T13:20:34Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.ForestofDean_EN-US7262962048_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Puzzled? Follow the trail",
+      "location": "Moss-covered rocks in Puzzlewood, Forest of Dean, Gloucestershire, England (© Fulcanelli_AOS/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.DanxiaLandform_EN-US5459628079_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A face you don't forget",
       "location": "Male bearded reedling, Norfolk, England (© Andrew Sproule/Shutterstock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.KasilofRiver_EN-US0047556055_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Born of glaciers",
-      "location": "The blue, glacier-fed waters of the Kasilof River, Alaska, USA (© jared lloyd/Getty Images)"
     }
   ]
 }
