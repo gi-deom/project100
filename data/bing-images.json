@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-08T06:01:54Z",
+  "updatedAt": "2026-10-08T13:26:31Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.MayotteOctopus_EN-US5694987016_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Now you 'sea' me...",
+      "location": "Octopus in defensive posture, Mayotte, Indian Ocean (© Gabriel Barathieu/Minden Pictures)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.ForestofDean_EN-US7262962048_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Reading time in granite",
       "location": "Sunset from Olmsted Point, Yosemite National Park, California, USA (© Robb Hirsch/Tandem Stills + Motion)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.BeardReedling_EN-US0124350202_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A face you don't forget",
-      "location": "Male bearded reedling, Norfolk, England (© Andrew Sproule/Shutterstock)"
     }
   ]
 }
