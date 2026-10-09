@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-09T06:06:37Z",
+  "updatedAt": "2026-10-09T13:14:27Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.IlesSanguinaires_EN-US5801644173_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Corsica's rocky outposts",
+      "location": "View of the Sanguinaires Islands from Corsica, France (© Francesco Riccardo Iacomino/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.MayotteOctopus_EN-US5694987016_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A river worth protecting",
       "location": "Chattooga River in the Appalachian Mountains, North Carolina (© mtilghma/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.OlmstedPoint_EN-US0964858045_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Reading time in granite",
-      "location": "Sunset from Olmsted Point, Yosemite National Park, California, USA (© Robb Hirsch/Tandem Stills + Motion)"
     }
   ]
 }
