@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-10T05:50:23Z",
+  "updatedAt": "2026-10-10T12:29:24Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.CormorantsFlight_EN-US5972403355_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Life along the flyway",
+      "location": "Double-crested cormorants over Monterey Bay, California (© Hiroya Minakuchi/Minden Pictures)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.IlesSanguinaires_EN-US5801644173_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Catch, eat, repeat",
       "location": "Brown bear in Silver Salmon Creek, Lake Clark National Park and Preserve, Alaska (© Danny Green/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.ChattoogaRiver_EN-US5042787453_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A river worth protecting",
-      "location": "Chattooga River in the Appalachian Mountains, North Carolina (© mtilghma/Getty Images)"
     }
   ]
 }
