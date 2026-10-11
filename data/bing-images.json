@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-11T05:44:24Z",
+  "updatedAt": "2026-10-11T12:47:18Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.BabcockSP_EN-US6068931791_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Where autumn turns the wheel",
+      "location": "Glade Creek Grist Mill, Babcock State Park, West Virginia (© dszc/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.CormorantsFlight_EN-US5972403355_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The universe is calling",
       "location": "Artemis I moon rocket at Launch Complex 39B, Kennedy Space Center, Florida, June 15, 2022 (© EVA MARIE UZCATEGUI/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.GrizzlySwim_EN-US5133524829_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Catch, eat, repeat",
-      "location": "Brown bear in Silver Salmon Creek, Lake Clark National Park and Preserve, Alaska (© Danny Green/Nature Picture Library)"
     }
   ]
 }
