@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-13T00:38:01Z",
+  "updatedAt": "2026-10-13T14:09:14Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.PlitviceAutumn_EN-US6255909048_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A symphony in blue and green",
+      "location": "Plitvice Lakes National Park, Croatia (© Jan Wlodarczyk/Alamy)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.WhiteHouse_EN-US6161912809_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Earth's story in stripes",
       "location": "Danxia landform, Zhangye National Geopark, Gansu, China (© Weiquan Lin/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AdelieTeacher_EN-US5343194378_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Taking the plunge, one lesson at a time",
-      "location": "Adélie penguins, Antarctica (© Otto Plantema/Minden Pictures)"
     }
   ]
 }
