@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-15T04:35:49Z",
+  "updatedAt": "2026-10-15T11:26:18Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.WroclawPoland_EN-US7757698922_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Bridges, rooftops, and twilight",
+      "location": "View of the Wroclaw Market Square from the Witches' Bridge in Wroclaw, Poland (© Piotr Mitelski/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AmmoniteFossils_EN-US6354038755_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Now you 'sea' me...",
       "location": "Octopus in defensive posture, Mayotte, Indian Ocean (© Gabriel Barathieu/Minden Pictures)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.ForestofDean_EN-US7262962048_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Puzzled? Follow the trail",
-      "location": "Moss-covered rocks in Puzzlewood, Forest of Dean, Gloucestershire, England (© Fulcanelli_AOS/Getty Images)"
     }
   ]
 }
