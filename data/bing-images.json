@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-17T04:23:09Z",
+  "updatedAt": "2026-10-17T10:41:36Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.ChauvetPaintingsFrance_EN-US6137200151_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The past, unearthed",
+      "location": "Life-size replica of Chauvet  cave art in Vallon-Pont-d'Arc, France (© Audrey Poree/Alamy)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.SneffelsAutumn_EN-US3953128777_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Life along the flyway",
       "location": "Double-crested cormorants over Monterey Bay, California (© Hiroya Minakuchi/Minden Pictures)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.IlesSanguinaires_EN-US5801644173_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Corsica's rocky outposts",
-      "location": "View of the Sanguinaires Islands from Corsica, France (© Francesco Riccardo Iacomino/Getty Images)"
     }
   ]
 }
