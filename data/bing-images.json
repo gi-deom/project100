@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-18T04:29:54Z",
+  "updatedAt": "2026-10-18T11:02:03Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.DolbadarnWales_EN-US6620614213_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "75 and thriving",
+      "location": "Dolbadarn Castle, Llanberis, Eryri National Park (Snowdonia), Wales (© joe daniel price/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.ChauvetPaintingsFrance_EN-US6137200151_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Where autumn turns the wheel",
       "location": "Glade Creek Grist Mill, Babcock State Park, West Virginia (© dszc/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.CormorantsFlight_EN-US5972403355_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Life along the flyway",
-      "location": "Double-crested cormorants over Monterey Bay, California (© Hiroya Minakuchi/Minden Pictures)"
     }
   ]
 }
