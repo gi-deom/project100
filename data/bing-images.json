@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-19T04:38:05Z",
+  "updatedAt": "2026-10-19T13:10:48Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.VeniceSunrise_EN-US6714393168_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The road that runs on water",
+      "location": "Grand Canal in Venice, Italy (© Juan Romero/Cavan Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.DolbadarnWales_EN-US6620614213_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A landscape of living history",
       "location": "White House Ruin at Canyon de Chelly National Monument in Arizona (© Ingo Arndt/Minden Pictures)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.BabcockSP_EN-US6068931791_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where autumn turns the wheel",
-      "location": "Glade Creek Grist Mill, Babcock State Park, West Virginia (© dszc/Getty Images)"
     }
   ]
 }
