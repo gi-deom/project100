@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-20T04:47:57Z",
+  "updatedAt": "2026-10-20T11:33:27Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.BrownSloth_EN-US6816754257_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Life in the slow lane",
+      "location": "Brown-throated sloth, Puerto Viejo de Talamanca, Costa Rica (© Suzi Eszterhas/Minden Pictures)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.VeniceSunrise_EN-US6714393168_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A symphony in blue and green",
       "location": "Plitvice Lakes National Park, Croatia (© Jan Wlodarczyk/Alamy)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.WhiteHouse_EN-US6161912809_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A landscape of living history",
-      "location": "White House Ruin at Canyon de Chelly National Monument in Arizona (© Ingo Arndt/Minden Pictures)"
     }
   ]
 }
