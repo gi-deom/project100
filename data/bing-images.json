@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-21T04:43:41Z",
+  "updatedAt": "2026-10-21T11:46:05Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.VietnamBridge_EN-US6907946681_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Winging it over the river",
+      "location": "Nguyen Hoang Bridge over the Perfume River, Hue, Vietnam (© VU PHAM VAN/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.BrownSloth_EN-US6816754257_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Spirals through time",
       "location": "Ammonite fossils from the Jurassic Period (© J Nemchinova/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.PlitviceAutumn_EN-US6255909048_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A symphony in blue and green",
-      "location": "Plitvice Lakes National Park, Croatia (© Jan Wlodarczyk/Alamy)"
     }
   ]
 }
