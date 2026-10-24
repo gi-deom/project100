@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-24T04:34:01Z",
+  "updatedAt": "2026-10-24T10:56:38Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.PortugueseLibrary_EN-US7519268149_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Bookishly extravagant",
+      "location": "Royal Portuguese Cabinet of Reading, Rio de Janeiro, Brazil (© Antonio Salaverry/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.YellowstoneWolves_EN-US7105521535_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The past, unearthed",
       "location": "Life-size replica of Chauvet  cave art in Vallon-Pont-d'Arc, France (© Audrey Poree/Alamy)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SneffelsAutumn_EN-US3953128777_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "'Peak' into Colorado",
-      "location": "Mount Sneffels in the San Juan Mountains near Ridgway, Colorado (© lightphoto/Getty Images)"
     }
   ]
 }
