@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-25T04:38:30Z",
+  "updatedAt": "2026-10-25T11:24:43Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.SitovoWaterfall_EN-US7626867890_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Nature's autumn soundtrack",
+      "location": "Autumn waterfalls near Sitovo, Plovdiv Province, Bulgaria (© Nadya85/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.PortugueseLibrary_EN-US7519268149_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "75 and thriving",
       "location": "Dolbadarn Castle, Llanberis, Eryri National Park (Snowdonia), Wales (© joe daniel price/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.ChauvetPaintingsFrance_EN-US6137200151_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "The past, unearthed",
-      "location": "Life-size replica of Chauvet  cave art in Vallon-Pont-d'Arc, France (© Audrey Poree/Alamy)"
     }
   ]
 }
