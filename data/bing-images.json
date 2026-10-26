@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-26T04:44:12Z",
+  "updatedAt": "2026-10-26T12:58:54Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.HangingBat_EN-US7714746725_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Hanging in there",
+      "location": "Gray-headed flying fox, Victoria, Australia (© Doug Gimesy/Nature Picture Library)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.SitovoWaterfall_EN-US7626867890_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The road that runs on water",
       "location": "Grand Canal in Venice, Italy (© Juan Romero/Cavan Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.DolbadarnWales_EN-US6620614213_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "75 and thriving",
-      "location": "Dolbadarn Castle, Llanberis, Eryri National Park (Snowdonia), Wales (© joe daniel price/Getty Images)"
     }
   ]
 }
