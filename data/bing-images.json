@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-28T05:39:32Z",
+  "updatedAt": "2026-10-28T12:51:17Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.KuneticeCastle_EN-US9492527404_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Where history stands watch",
+      "location": "Kunětická hora Castle, Bohemia, Czechia (© Marek Saroch/Alamy)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.PondCypress_EN-US0123444779_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Winging it over the river",
       "location": "Nguyen Hoang Bridge over the Perfume River, Hue, Vietnam (© VU PHAM VAN/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.BrownSloth_EN-US6816754257_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Life in the slow lane",
-      "location": "Brown-throated sloth, Puerto Viejo de Talamanca, Costa Rica (© Suzi Eszterhas/Minden Pictures)"
     }
   ]
 }
