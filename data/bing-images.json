@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-29T05:45:11Z",
+  "updatedAt": "2026-10-29T12:57:58Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AveburyStones_EN-US9568662876_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Where mist meets millennia",
+      "location": "Standing stones at Avebury in Wiltshire, England (© George W Johnson/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.KuneticeCastle_EN-US9492527404_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Still waters, vivid colors",
       "location": "Autumn in Naejangsan National Park, South Korea (© Twenty47studio/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.VietnamBridge_EN-US6907946681_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Winging it over the river",
-      "location": "Nguyen Hoang Bridge over the Perfume River, Hue, Vietnam (© VU PHAM VAN/Getty Images)"
     }
   ]
 }
