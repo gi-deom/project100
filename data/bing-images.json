@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-30T05:45:11Z",
+  "updatedAt": "2026-10-30T12:52:08Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AutumnCranes_EN-US9795571462_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Time to fly high",
+      "location": "Sandhill cranes, Bosque del Apache National Wildlife Refuge, New Mexico, USA (© Terry St.Louis/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AveburyStones_EN-US9568662876_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Partners in the wild",
       "location": "Two gray wolves, Yellowstone National Park, Wyoming (© John Morrison/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.NaejangsanNP_EN-US7010419904_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Still waters, vivid colors",
-      "location": "Autumn in Naejangsan National Park, South Korea (© Twenty47studio/Getty Images)"
     }
   ]
 }
