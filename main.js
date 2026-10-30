@@ -16,6 +16,14 @@ localStorage.setItem('northlight-interval-value', String(savedInterval));
 localStorage.setItem('northlight-interval-unit', savedUnit);
 const unitSeconds = { seconds: 1, minutes: 60, hours: 3600, days: 86400 };
 const state = { queue: [], currentIndex: 0, secondsLeft: savedInterval * unitSeconds[savedUnit], intervalValue: savedInterval, intervalUnit: savedUnit, isPlaying: true, timer: null, archiveTimer: null, isLoading: false, imageCache: new Map(), transitionToken: 0 };
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(registrations => registrations.forEach(registration => registration.unregister()));
+}
+if ('caches' in window) {
+  caches.keys().then(keys => keys.forEach(key => caches.delete(key)));
+}
+
 const elements = {
   current: document.querySelector('.image-layer--current'), back: document.querySelector('.image-layer--back'),
   title: document.querySelector('#image-title'), caption: document.querySelector('#image-caption'), location: document.querySelector('#image-location'),
