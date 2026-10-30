@@ -198,4 +198,3 @@ updateIntervalLabel();
 checkForUpdates();
 loadQueue({ reset: true });
 state.archiveTimer = setInterval(() => loadQueue(), 15 * 60 * 1000);
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
