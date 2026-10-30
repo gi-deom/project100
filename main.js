@@ -23,10 +23,10 @@ const elements = {
   preview: document.querySelector('#queue-preview'), sync: document.querySelector('#sync-label'),
   playButton: document.querySelector('#play-button'), playIcon: document.querySelector('#play-icon'), playLabel: document.querySelector('#play-label'), playbackStatus: document.querySelector('#playback-status'),
   queueTab: document.querySelector('#queue-tab'), settingsTab: document.querySelector('#settings-tab'), updateTab: document.querySelector('#update-tab'), queueView: document.querySelector('#queue-view'), settingsView: document.querySelector('#settings-view'), updateView: document.querySelector('#update-view'),
-  intervalValue: document.querySelector('#interval-value'), intervalUnit: document.querySelector('#interval-unit'), intervalOutput: document.querySelector('#interval-output'), desktopToggle: document.querySelector('#desktop-toggle'), lockToggle: document.querySelector('#lock-toggle'), menuButton: document.querySelector('#menu-button'), panelClose: document.querySelector('#panel-close'), queuePanel: document.querySelector('#queue-panel')
+  intervalValue: document.querySelector('#interval-value'), intervalUnit: document.querySelector('#interval-unit'), intervalOutput: document.querySelector('#interval-output'), desktopToggle: document.querySelector('#desktop-toggle'), lockToggle: document.querySelector('#lock-toggle'), saveSettingsButton: document.querySelector('#save-settings-button'), settingsSaveStatus: document.querySelector('#settings-save-status'), menuButton: document.querySelector('#menu-button'), panelClose: document.querySelector('#panel-close'), queuePanel: document.querySelector('#queue-panel')
 };
 
-function updateIntervalLabel() { elements.intervalOutput.textContent = `${state.intervalValue} ${state.intervalUnit}`; }
+function updateIntervalLabel() { elements.intervalOutput.textContent = `${Math.max(1, Number(elements.intervalValue.value) || 1)} ${elements.intervalUnit.value}`; }
 function selectPanel(panel) {
   const settingsOpen = panel === 'settings';
   const updateOpen = panel === 'update';
@@ -162,11 +162,24 @@ elements.settingsTab.addEventListener('click', () => selectPanel('settings'));
 elements.updateTab.addEventListener('click', () => selectPanel('update'));
 elements.menuButton.addEventListener('click', () => togglePanel(!elements.queuePanel.classList.contains('is-open')));
 elements.panelClose.addEventListener('click', () => togglePanel(false));
-function saveInterval() { state.intervalValue = Math.max(1, Number(elements.intervalValue.value) || 1); state.intervalUnit = elements.intervalUnit.value; elements.intervalValue.value = state.intervalValue; localStorage.setItem('northlight-interval-value', state.intervalValue); localStorage.setItem('northlight-interval-unit', state.intervalUnit); updateIntervalLabel(); resetTimer(); }
-elements.intervalValue.addEventListener('input', saveInterval);
-elements.intervalUnit.addEventListener('change', saveInterval);
-elements.desktopToggle.addEventListener('change', event => localStorage.setItem('northlight-desktop-wallpaper', event.target.checked));
-elements.lockToggle.addEventListener('change', event => localStorage.setItem('northlight-lock-wallpaper', event.target.checked));
+function markSettingsChanged() { updateIntervalLabel(); elements.settingsSaveStatus.textContent = 'Unsaved changes'; }
+function saveSettings() {
+  state.intervalValue = Math.max(1, Number(elements.intervalValue.value) || 1);
+  state.intervalUnit = elements.intervalUnit.value;
+  elements.intervalValue.value = state.intervalValue;
+  localStorage.setItem('northlight-interval-value', state.intervalValue);
+  localStorage.setItem('northlight-interval-unit', state.intervalUnit);
+  localStorage.setItem('northlight-desktop-wallpaper', String(elements.desktopToggle.checked));
+  localStorage.setItem('northlight-lock-wallpaper', String(elements.lockToggle.checked));
+  updateIntervalLabel();
+  resetTimer();
+  elements.settingsSaveStatus.textContent = 'Settings saved';
+}
+elements.intervalValue.addEventListener('input', markSettingsChanged);
+elements.intervalUnit.addEventListener('change', markSettingsChanged);
+elements.desktopToggle.addEventListener('change', markSettingsChanged);
+elements.lockToggle.addEventListener('change', markSettingsChanged);
+elements.saveSettingsButton.addEventListener('click', saveSettings);
 const updateStatus = document.querySelector('#update-status');
 const updateDetail = document.querySelector('#update-detail');
 const updateDot = document.querySelector('#update-dot');
@@ -195,6 +208,7 @@ elements.intervalUnit.value = state.intervalUnit;
 elements.desktopToggle.checked = localStorage.getItem('northlight-desktop-wallpaper') !== 'false';
 elements.lockToggle.checked = localStorage.getItem('northlight-lock-wallpaper') !== 'false';
 updateIntervalLabel();
+elements.settingsSaveStatus.textContent = 'Changes are saved when you press the button.';
 checkForUpdates();
 loadQueue({ reset: true });
 state.archiveTimer = setInterval(() => loadQueue(), 15 * 60 * 1000);
