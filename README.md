@@ -4,9 +4,7 @@ A dependency-free Bing wallpaper slideshow. It requests the Bing Image Archive a
 
 The slideshow checks Bing automatically every 15 minutes. New wallpaper URLs are merged into the existing queue without restarting playback or repeating an image. The refresh button performs the same update immediately.
 
-Animated wallpapers are loaded online from Bing when its homepage exposes a motion background and from several Wikimedia Commons nature-video categories. Up to 250 current landscape, ocean, waterfall, cloud, and forest candidates are requested without an API key. Browser-supported MP4 and WebM files play muted and loop in the slideshow; unavailable or unsupported files are skipped automatically.
-
-Animated wallpaper works in the browser and fullscreen modes. Native XFCE desktop video requires an additional X11 embedding utility such as `xwinwrap`; the installed static desktop/lock-screen updater continues using Bing photos when that utility is unavailable.
+The slideshow uses Bing photos and wallpapers only.
 
 ## Kali Linux application
 

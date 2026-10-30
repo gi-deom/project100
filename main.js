@@ -1,6 +1,5 @@
 const BING_ENDPOINT = 'https://www.bing.com/HPImageArchive.aspx?format=js&idx=';
 const bingMarkets = ['en-US', 'en-GB', 'en-CA', 'en-AU', 'de-DE', 'fr-FR', 'it-IT', 'es-ES', 'pt-BR', 'ja-JP', 'ko-KR', 'zh-CN', 'sv-SE'];
-const motionSearches = ['landscape', 'waterfall', 'clouds timelapse', 'ocean waves', 'forest nature'];
 const fallbackImages = Array.from({ length: 1000 }, (_, index) => ({
   url: `https://picsum.photos/seed/gidlight-${index + 1}/1800/1200`,
   type: 'image',
@@ -18,7 +17,7 @@ localStorage.setItem('northlight-interval-unit', savedUnit);
 const unitSeconds = { seconds: 1, minutes: 60, hours: 3600, days: 86400 };
 const state = { queue: [], currentIndex: 0, secondsLeft: savedInterval * unitSeconds[savedUnit], intervalValue: savedInterval, intervalUnit: savedUnit, isPlaying: true, timer: null, archiveTimer: null, isLoading: false, imageCache: new Map(), transitionToken: 0 };
 const elements = {
-  current: document.querySelector('.image-layer--current'), back: document.querySelector('.image-layer--back'), videoCurrent: document.querySelector('.video-layer--current'), videoBack: document.querySelector('.video-layer--back'),
+  current: document.querySelector('.image-layer--current'), back: document.querySelector('.image-layer--back'),
   title: document.querySelector('#image-title'), caption: document.querySelector('#image-caption'), location: document.querySelector('#image-location'),
   loaded: document.querySelector('#loaded-count'),
   preview: document.querySelector('#queue-preview'), sync: document.querySelector('#sync-label'),
@@ -55,36 +54,6 @@ async function fetchBatch(index, market) {
   return (data.images || []).map(image => ({ url: `https://www.bing.com${image.url}`, type: 'image', title: image.title || 'Untitled landscape', location: image.copyright || 'Bing Image Archive' }));
 }
 
-async function fetchBingVideo() {
-  const response = await fetch('https://www.bing.com');
-  if (!response.ok) throw new Error('Bing homepage unavailable');
-  const html = await response.text();
-  const matches = [...html.matchAll(/https?:[^"']+\.(?:mp4|webm)(?:\?[^"']*)?/gi)];
-  return matches.map(match => ({ url: match[0].replaceAll('\\u0026', '&'), type: 'video', title: 'Bing motion wallpaper', location: 'Bing homepage video' }));
-}
-
-async function fetchMotionWallpapers(searchTerm) {
-  const parameters = new URLSearchParams({
-    action: 'query', generator: 'search', gsrsearch: `${searchTerm} filetype:video`,
-    gsrnamespace: '6', gsrlimit: '50', prop: 'imageinfo', iiprop: 'url|mime',
-    iiurlwidth: '1280', format: 'json', origin: '*'
-  });
-  const response = await fetch(`https://commons.wikimedia.org/w/api.php?${parameters}`);
-  if (!response.ok) throw new Error('Motion wallpaper archive unavailable');
-  const data = await response.json();
-  return Object.values(data.query?.pages || {}).flatMap(page => {
-    const info = page.imageinfo?.[0];
-    if (!info || !['video/webm', 'video/mp4'].includes(info.mime)) return [];
-    return [{
-      url: info.url,
-      poster: info.thumburl || '',
-      type: 'video',
-      title: page.title.replace(/^File:/, '').replace(/\.[^.]+$/, '').replaceAll('_', ' '),
-      location: 'Animated nature wallpaper · Wikimedia Commons'
-    }];
-  });
-}
-
 async function fetchPublishedArchive() {
   const response = await fetch('./data/bing-images.json', { cache: 'no-store' });
   if (!response.ok) throw new Error('Published archive unavailable');
@@ -105,10 +74,6 @@ async function loadQueue({ reset = false } = {}) {
     publishedImages.concat(batches.flatMap(result => result.status === 'fulfilled' ? result.value : [])).forEach(image => {
       if (!seen.has(image.url)) { seen.add(image.url); images.push(image); }
     });
-    const motionResults = await Promise.allSettled([fetchBingVideo(), ...motionSearches.map(fetchMotionWallpapers)]);
-    motionResults.forEach(result => (result.status === 'fulfilled' ? result.value : []).forEach(video => {
-      if (!seen.has(video.url)) { seen.add(video.url); images.unshift(video); }
-    }));
     if (!images.length) throw new Error('No images returned');
     const existingUrls = new Set(state.queue.map(image => image.url));
     const newImages = images.filter(image => !existingUrls.has(image.url));
@@ -118,8 +83,7 @@ async function loadQueue({ reset = false } = {}) {
     } else {
       state.queue = [...state.queue, ...newImages];
     }
-    const motionCount = images.filter(item => item.type === 'video').length;
-    elements.sync.textContent = motionCount ? `Online · ${motionCount} animated wallpapers` : 'Bing archive synced';
+    elements.sync.textContent = 'Bing archive synced';
   } catch (error) {
     if (reset || !state.queue.length) {
       state.queue = fallbackImages;
@@ -141,12 +105,11 @@ async function loadQueue({ reset = false } = {}) {
 
 function renderQueue() {
   elements.loaded.textContent = String(state.queue.length);
-  elements.preview.innerHTML = state.queue.slice(0, 12).map((item, index) => `<button class="preview-tile${index === state.currentIndex ? ' is-active' : ''}" style="background-image:url('${item.poster || item.url}')" data-index="${index}" aria-label="View ${item.type === 'video' ? 'animated ' : ''}wallpaper ${index + 1}"></button>`).join('');
+  elements.preview.innerHTML = state.queue.slice(0, 12).map((item, index) => `<button class="preview-tile${index === state.currentIndex ? ' is-active' : ''}" style="background-image:url('${item.url}')" data-index="${index}" aria-label="View wallpaper ${index + 1}"></button>`).join('');
   elements.preview.querySelectorAll('[data-index]').forEach(button => button.addEventListener('click', () => { state.currentIndex = Number(button.dataset.index); showImage(); resetTimer(); }));
 }
 
 function preloadImage(image) {
-  if (image.type === 'video') return preloadVideo(image);
   if (state.imageCache.has(image.url)) return state.imageCache.get(image.url);
   const request = new Promise(resolve => {
     const photo = new Image();
@@ -158,20 +121,6 @@ function preloadImage(image) {
   return request;
 }
 
-function preloadVideo(media) {
-  if (state.imageCache.has(media.url)) return state.imageCache.get(media.url);
-  const request = new Promise(resolve => {
-    const video = document.createElement('video');
-    video.muted = true;
-    video.preload = 'metadata';
-    video.onloadeddata = () => resolve(true);
-    video.onerror = () => resolve(false);
-    video.src = media.url;
-  });
-  state.imageCache.set(media.url, request);
-  return request;
-}
-
 async function showImage() {
   const image = state.queue[state.currentIndex];
   if (!image) return;
@@ -179,21 +128,9 @@ async function showImage() {
   const loaded = await preloadImage(image);
   if (transitionToken !== state.transitionToken) return;
   if (!loaded) { nextImage(); return; }
-  if (image.type === 'video') {
-    elements.videoBack.src = image.url;
-    elements.videoBack.classList.add('is-visible');
-    elements.videoBack.play().catch(() => {});
-    elements.current.classList.remove('is-visible');
-    elements.videoCurrent.classList.remove('is-visible');
-    elements.videoCurrent.src = image.url;
-    await elements.videoCurrent.play().catch(() => {});
-    elements.videoCurrent.classList.add('is-visible');
-    elements.videoBack.classList.remove('is-visible');
-  } else if (!elements.current.style.backgroundImage) {
+  if (!elements.current.style.backgroundImage) {
     elements.current.style.backgroundImage = `url('${image.url}')`;
-    elements.videoCurrent.classList.remove('is-visible');
   } else {
-    elements.videoCurrent.classList.remove('is-visible');
     elements.back.style.backgroundImage = `url('${image.url}')`;
     elements.back.classList.add('is-visible');
     await new Promise(resolve => setTimeout(resolve, 1100));
@@ -202,7 +139,7 @@ async function showImage() {
     elements.back.classList.remove('is-visible');
   }
   elements.title.textContent = image.title;
-  elements.caption.textContent = image.type === 'video' ? 'Online animated wallpaper' : 'Bing daily wallpaper archive';
+  elements.caption.textContent = 'Bing daily wallpaper archive';
   elements.location.textContent = image.location;
   document.querySelectorAll('.preview-tile').forEach((tile, index) => tile.classList.toggle('is-active', index === state.currentIndex));
   elements.current.style.animation = 'none';
