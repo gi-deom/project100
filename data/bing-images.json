@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-31T05:37:42Z",
+  "updatedAt": "2026-10-31T12:24:45Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.FrankfurtHalloween_EN-US0115213682_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Ghosts of empires past",
+      "location": "St. Bartholomew's Cathedral in Frankfurt, Germany (© AlxeyPnferov/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AutumnCranes_EN-US9795571462_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Bookishly extravagant",
       "location": "Royal Portuguese Cabinet of Reading, Rio de Janeiro, Brazil (© Antonio Salaverry/Shutterstock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.YellowstoneWolves_EN-US7105521535_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Partners in the wild",
-      "location": "Two gray wolves, Yellowstone National Park, Wyoming (© John Morrison/Getty Images)"
     }
   ]
 }
