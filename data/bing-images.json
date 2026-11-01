@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-01T05:59:31Z",
+  "updatedAt": "2026-11-01T13:19:56Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.NativeBaskets_EN-US0205712064_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Crafting continuity",
+      "location": "Handmade baskets, Santa Fe, New Mexico (© Patrick Lane/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.FrankfurtHalloween_EN-US0115213682_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Nature's autumn soundtrack",
       "location": "Autumn waterfalls near Sitovo, Plovdiv Province, Bulgaria (© Nadya85/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.PortugueseLibrary_EN-US7519268149_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Bookishly extravagant",
-      "location": "Royal Portuguese Cabinet of Reading, Rio de Janeiro, Brazil (© Antonio Salaverry/Shutterstock)"
     }
   ]
 }
