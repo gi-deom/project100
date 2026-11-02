@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-02T05:58:50Z",
+  "updatedAt": "2026-11-02T15:47:23Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.HudsonBear_EN-US0297833232_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A future written in ice",
+      "location": "Polar bear and cubs by Hudson Bay, Manitoba, Canada (© Danita Delimont/Adobe Stock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.NativeBaskets_EN-US0205712064_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Hanging in there",
       "location": "Gray-headed flying fox, Victoria, Australia (© Doug Gimesy/Nature Picture Library)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SitovoWaterfall_EN-US7626867890_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Nature's autumn soundtrack",
-      "location": "Autumn waterfalls near Sitovo, Plovdiv Province, Bulgaria (© Nadya85/Getty Images)"
     }
   ]
 }
