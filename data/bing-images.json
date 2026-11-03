@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-03T00:56:21Z",
+  "updatedAt": "2026-11-03T14:10:14Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AlpineBraies_EN-US6636326357_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Peace among the peaks",
+      "location": "Lake Braies, Fanes‑Sennes‑Braies Nature Park, Dolomites, Italy (© leonid_tit/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.HudsonBear_EN-US0297833232_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Nature's golden mirror",
       "location": "A grove of pond cypress trees with fall foliage, Georgia, USA (© Chris Moore/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.HangingBat_EN-US7714746725_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Hanging in there",
-      "location": "Gray-headed flying fox, Victoria, Australia (© Doug Gimesy/Nature Picture Library)"
     }
   ]
 }
