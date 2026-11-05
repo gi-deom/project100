@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-05T06:42:55Z",
+  "updatedAt": "2026-11-05T19:55:26Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.StileCrossing_EN-US9052435517_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "One step closer to the summit",
+      "location": "Wooden stile at a stone wall, Black Crag, Lake District, England (© Alex Treadway/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AutumnChina_EN-US0467722422_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Where mist meets millennia",
       "location": "Standing stones at Avebury in Wiltshire, England (© George W Johnson/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.KuneticeCastle_EN-US9492527404_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where history stands watch",
-      "location": "Kunětická hora Castle, Bohemia, Czechia (© Marek Saroch/Alamy)"
     }
   ]
 }
