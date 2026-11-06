@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-06T06:40:10Z",
+  "updatedAt": "2026-11-06T19:22:52Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.PipiwaiTrail_EN-US0631882545_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A green tunnel through Maui",
+      "location": "Bamboo forest, Pīpīwai Trail, Haleakalā National Park, Maui, Hawaii (© MNStudio/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.StileCrossing_EN-US9052435517_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Time to fly high",
       "location": "Sandhill cranes, Bosque del Apache National Wildlife Refuge, New Mexico, USA (© Terry St.Louis/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AveburyStones_EN-US9568662876_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where mist meets millennia",
-      "location": "Standing stones at Avebury in Wiltshire, England (© George W Johnson/Getty Images)"
     }
   ]
 }
