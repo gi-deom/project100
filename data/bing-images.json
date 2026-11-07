@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-07T05:56:02Z",
+  "updatedAt": "2026-11-07T12:57:41Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.DakotaBison_EN-US0710175615_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The giant that came back",
+      "location": "A bison in the grasslands of Theodore Roosevelt National Park, North Dakota (© Tandem Stock/Adobe Stock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.PipiwaiTrail_EN-US0631882545_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Ghosts of empires past",
       "location": "St. Bartholomew's Cathedral in Frankfurt, Germany (© AlxeyPnferov/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AutumnCranes_EN-US9795571462_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Time to fly high",
-      "location": "Sandhill cranes, Bosque del Apache National Wildlife Refuge, New Mexico, USA (© Terry St.Louis/Getty Images)"
     }
   ]
 }
