@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-09T06:22:58Z",
+  "updatedAt": "2026-11-09T22:19:11Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Where art finds its rhythm",
+      "location": "Historic district of Triana, Seville, Spain (© Andrzej Rostek/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.DiwaliLamps_EN-US0788074051_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A future written in ice",
       "location": "Polar bear and cubs by Hudson Bay, Manitoba, Canada (© Danita Delimont/Adobe Stock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.NativeBaskets_EN-US0205712064_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Crafting continuity",
-      "location": "Handmade baskets, Santa Fe, New Mexico (© Patrick Lane/Getty Images)"
     }
   ]
 }
