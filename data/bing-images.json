@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-11T06:13:51Z",
+  "updatedAt": "2026-11-11T14:23:45Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.SunsetFlags_EN-US1046151448_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A salute in red, white, and blue",
+      "location": "American flags in a public park in upstate New York (© Matt Champlin/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.RoseIsland_EN-US0952497192_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Paddling a painted forest",
       "location": "People rowing among colorful bald cypress, Xuancheng, Anhui, China (© Jackal Pan/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AlpineBraies_EN-US6636326357_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Peace among the peaks",
-      "location": "Lake Braies, Fanes‑Sennes‑Braies Nature Park, Dolomites, Italy (© leonid_tit/Getty Images)"
     }
   ]
 }
