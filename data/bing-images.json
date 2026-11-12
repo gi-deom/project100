@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-12T00:40:45Z",
+  "updatedAt": "2026-11-12T15:11:06Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Architecture without an architect",
+      "location": "North Window, Arches National Park, Moab, Utah (© lightphoto/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.SunsetFlags_EN-US1046151448_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "One step closer to the summit",
       "location": "Wooden stile at a stone wall, Black Crag, Lake District, England (© Alex Treadway/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.AutumnChina_EN-US0467722422_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Paddling a painted forest",
-      "location": "People rowing among colorful bald cypress, Xuancheng, Anhui, China (© Jackal Pan/Getty Images)"
     }
   ]
 }
