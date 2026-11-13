@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-13T06:42:09Z",
+  "updatedAt": "2026-11-13T19:39:24Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.AbrahamCanada_EN-US3455540217_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Hidden depths",
+      "location": "Abraham Lake in Alberta, Canada (© Guang Cao/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A green tunnel through Maui",
       "location": "Bamboo forest, Pīpīwai Trail, Haleakalā National Park, Maui, Hawaii (© MNStudio/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.StileCrossing_EN-US9052435517_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "One step closer to the summit",
-      "location": "Wooden stile at a stone wall, Black Crag, Lake District, England (© Alex Treadway/Getty Images)"
     }
   ]
 }
