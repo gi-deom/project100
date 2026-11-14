@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-14T06:19:15Z",
+  "updatedAt": "2026-11-14T17:58:48Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.BlueHK_EN-US7870996687_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "The only way is up",
+      "location": "Victoria Harbour, Hong Kong, China (© Juan Romero/Cavan Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.AbrahamCanada_EN-US3455540217_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "The giant that came back",
       "location": "A bison in the grasslands of Theodore Roosevelt National Park, North Dakota (© Tandem Stock/Adobe Stock)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.PipiwaiTrail_EN-US0631882545_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A green tunnel through Maui",
-      "location": "Bamboo forest, Pīpīwai Trail, Haleakalā National Park, Maui, Hawaii (© MNStudio/Getty Images)"
     }
   ]
 }
