@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-15T06:27:08Z",
+  "updatedAt": "2026-11-15T18:49:21Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Frosty foliage",
+      "location": "Frozen azalea with red leaves (© avoferten/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.BlueHK_EN-US7870996687_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A celebration that shines",
       "location": "Lanterns for Diwali, Mumbai, Maharashtra, India (© Dinodia Photo/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.DakotaBison_EN-US0710175615_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "The giant that came back",
-      "location": "A bison in the grasslands of Theodore Roosevelt National Park, North Dakota (© Tandem Stock/Adobe Stock)"
     }
   ]
 }
