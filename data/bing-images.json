@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-16T06:24:47Z",
+  "updatedAt": "2026-11-16T21:59:25Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Built to last",
+      "location": "Gila Cliff Dwellings National Monument, New Mexico (© Chiara Salvadori/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Where art finds its rhythm",
       "location": "Historic district of Triana, Seville, Spain (© Andrzej Rostek/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.DiwaliLamps_EN-US0788074051_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A celebration that shines",
-      "location": "Lanterns for Diwali, Mumbai, Maharashtra, India (© Dinodia Photo/Getty Images)"
     }
   ]
 }
