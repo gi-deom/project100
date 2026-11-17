@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-17T07:52:40Z",
+  "updatedAt": "2026-11-17T20:53:05Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.TrailCedars_EN-US2240500417_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Step into the great outdoors",
+      "location": "Trail of the Cedars, Glacier National Park, Montana (© DBushue Photography/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Licensed to chill",
       "location": "Aerial view of Rose Island, The Bahamas (© Abstract Aerial Art/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where art finds its rhythm",
-      "location": "Historic district of Triana, Seville, Spain (© Andrzej Rostek/Getty Images)"
     }
   ]
 }
