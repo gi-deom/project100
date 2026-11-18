@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-18T07:24:48Z",
+  "updatedAt": "2026-11-18T20:28:46Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_EN-US9661992435_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Hunting from dusk till dawn",
+      "location": "Pair of barn owls (© Zahoor Salmi/Getty Images)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.TrailCedars_EN-US2240500417_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "A salute in red, white, and blue",
       "location": "American flags in a public park in upstate New York (© Matt Champlin/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.RoseIsland_EN-US0952497192_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Licensed to chill",
-      "location": "Aerial view of Rose Island, The Bahamas (© Abstract Aerial Art/Getty Images)"
     }
   ]
 }
