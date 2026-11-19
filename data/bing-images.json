@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-19T07:21:41Z",
+  "updatedAt": "2026-11-19T20:33:17Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Where ideas take shape",
+      "location": "The \"Body of Knowledge\" sculpture by Jaume Plensa at Goethe University in Frankfurt, Germany (© Todamo/Shutterstock)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_EN-US9661992435_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Architecture without an architect",
       "location": "North Window, Arches National Park, Moab, Utah (© lightphoto/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.SunsetFlags_EN-US1046151448_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "A salute in red, white, and blue",
-      "location": "American flags in a public park in upstate New York (© Matt Champlin/Getty Images)"
     }
   ]
 }
