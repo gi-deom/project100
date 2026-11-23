@@ -103,6 +103,16 @@
               </div>
               <output id="interval-output">30 seconds</output>
             </div>
+            <div class="setting-control setting-control--stacked">
+              <label for="transition-effect">Photo transition</label>
+              <select class="transition-select" id="transition-effect">
+                <option value="crossfade" selected>Crossfade</option>
+                <option value="slide">Slide</option>
+                <option value="zoom">Zoom</option>
+                <option value="blur">Soft blur</option>
+              </select>
+              <p class="setting-help">Choose how the next photo enters the slideshow.</p>
+            </div>
             <div class="setting-control"><span>Desktop wallpaper</span><input id="desktop-toggle" type="checkbox" checked /></div>
             <div class="setting-control"><span>Lock-screen wallpaper</span><input id="lock-toggle" type="checkbox" checked /></div>
             <button class="button button--save" id="save-settings-button" type="button">Save settings</button>

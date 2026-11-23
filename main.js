@@ -11,11 +11,13 @@ const intervalVersion = '30-second-default-v1';
 const hasCurrentInterval = localStorage.getItem('northlight-interval-version') === intervalVersion;
 const savedInterval = hasCurrentInterval ? (Number(localStorage.getItem('northlight-interval-value')) || 30) : 30;
 const savedUnit = hasCurrentInterval ? (localStorage.getItem('northlight-interval-unit') || 'seconds') : 'seconds';
+const transitionEffects = new Set(['crossfade', 'slide', 'zoom', 'blur']);
+const savedTransition = transitionEffects.has(localStorage.getItem('northlight-transition')) ? localStorage.getItem('northlight-transition') : 'crossfade';
 localStorage.setItem('northlight-interval-version', intervalVersion);
 localStorage.setItem('northlight-interval-value', String(savedInterval));
 localStorage.setItem('northlight-interval-unit', savedUnit);
 const unitSeconds = { seconds: 1, minutes: 60, hours: 3600, days: 86400 };
-const state = { queue: [], currentIndex: 0, secondsLeft: savedInterval * unitSeconds[savedUnit], intervalValue: savedInterval, intervalUnit: savedUnit, isPlaying: true, timer: null, archiveTimer: null, isLoading: false, imageCache: new Map(), transitionToken: 0 };
+const state = { queue: [], currentIndex: 0, secondsLeft: savedInterval * unitSeconds[savedUnit], intervalValue: savedInterval, intervalUnit: savedUnit, transition: savedTransition, isPlaying: true, timer: null, archiveTimer: null, isLoading: false, imageCache: new Map(), transitionToken: 0 };
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.getRegistrations().then(registrations => registrations.forEach(registration => registration.unregister()));
@@ -31,7 +33,7 @@ const elements = {
   preview: document.querySelector('#queue-preview'), sync: document.querySelector('#sync-label'),
   playButton: document.querySelector('#play-button'), playIcon: document.querySelector('#play-icon'), playLabel: document.querySelector('#play-label'), playbackStatus: document.querySelector('#playback-status'),
   queueTab: document.querySelector('#queue-tab'), settingsTab: document.querySelector('#settings-tab'), updateTab: document.querySelector('#update-tab'), queueView: document.querySelector('#queue-view'), settingsView: document.querySelector('#settings-view'), updateView: document.querySelector('#update-view'),
-  intervalValue: document.querySelector('#interval-value'), intervalUnit: document.querySelector('#interval-unit'), intervalOutput: document.querySelector('#interval-output'), desktopToggle: document.querySelector('#desktop-toggle'), lockToggle: document.querySelector('#lock-toggle'), saveSettingsButton: document.querySelector('#save-settings-button'), settingsSaveStatus: document.querySelector('#settings-save-status'), menuButton: document.querySelector('#menu-button'), panelClose: document.querySelector('#panel-close'), queuePanel: document.querySelector('#queue-panel')
+  intervalValue: document.querySelector('#interval-value'), intervalUnit: document.querySelector('#interval-unit'), intervalOutput: document.querySelector('#interval-output'), transitionEffect: document.querySelector('#transition-effect'), desktopToggle: document.querySelector('#desktop-toggle'), lockToggle: document.querySelector('#lock-toggle'), saveSettingsButton: document.querySelector('#save-settings-button'), settingsSaveStatus: document.querySelector('#settings-save-status'), menuButton: document.querySelector('#menu-button'), panelClose: document.querySelector('#panel-close'), queuePanel: document.querySelector('#queue-panel'), stage: document.querySelector('.stage')
 };
 
 function updateIntervalLabel() { elements.intervalOutput.textContent = `${Math.max(1, Number(elements.intervalValue.value) || 1)} ${elements.intervalUnit.value}`; }
@@ -139,6 +141,7 @@ async function showImage() {
   if (!elements.current.style.backgroundImage) {
     elements.current.style.backgroundImage = `url('${image.url}')`;
   } else {
+    elements.stage.dataset.transition = state.transition;
     elements.back.style.backgroundImage = `url('${image.url}')`;
     elements.back.classList.add('is-visible');
     await new Promise(resolve => setTimeout(resolve, 1100));
@@ -174,9 +177,11 @@ function markSettingsChanged() { updateIntervalLabel(); elements.settingsSaveSta
 function saveSettings() {
   state.intervalValue = Math.max(1, Number(elements.intervalValue.value) || 1);
   state.intervalUnit = elements.intervalUnit.value;
+  state.transition = transitionEffects.has(elements.transitionEffect.value) ? elements.transitionEffect.value : 'crossfade';
   elements.intervalValue.value = state.intervalValue;
   localStorage.setItem('northlight-interval-value', state.intervalValue);
   localStorage.setItem('northlight-interval-unit', state.intervalUnit);
+  localStorage.setItem('northlight-transition', state.transition);
   localStorage.setItem('northlight-desktop-wallpaper', String(elements.desktopToggle.checked));
   localStorage.setItem('northlight-lock-wallpaper', String(elements.lockToggle.checked));
   updateIntervalLabel();
@@ -185,6 +190,7 @@ function saveSettings() {
 }
 elements.intervalValue.addEventListener('input', markSettingsChanged);
 elements.intervalUnit.addEventListener('change', markSettingsChanged);
+elements.transitionEffect.addEventListener('change', markSettingsChanged);
 elements.desktopToggle.addEventListener('change', markSettingsChanged);
 elements.lockToggle.addEventListener('change', markSettingsChanged);
 elements.saveSettingsButton.addEventListener('click', saveSettings);
@@ -213,6 +219,7 @@ document.querySelector('#check-update-button').addEventListener('click', checkFo
 document.addEventListener('keydown', event => { if (event.key === 'ArrowRight') nextImage(); if (event.key === 'ArrowLeft') previousImage(); if (event.key === ' ') { event.preventDefault(); togglePlay(); } if (event.key === 'Escape') togglePanel(false); });
 elements.intervalValue.value = state.intervalValue;
 elements.intervalUnit.value = state.intervalUnit;
+elements.transitionEffect.value = state.transition;
 elements.desktopToggle.checked = localStorage.getItem('northlight-desktop-wallpaper') !== 'false';
 elements.lockToggle.checked = localStorage.getItem('northlight-lock-wallpaper') !== 'false';
 updateIntervalLabel();

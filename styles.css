@@ -17,11 +17,17 @@ button, input { font: inherit; }
 button { cursor: pointer; }
 .app-shell { min-height: 100vh; }
 .stage { min-height: 100vh; position: relative; overflow: hidden; color: white; isolation: isolate; display: flex; flex-direction: column; padding: 34px 4.5vw 34px; }
-.image-layer { position: absolute; inset: 0; z-index: -3; background-position: center; background-size: cover; background-repeat: no-repeat; transition: opacity 1.1s ease, transform 10s linear; }
+.image-layer { position: absolute; inset: 0; z-index: -3; background-position: center; background-size: cover; background-repeat: no-repeat; transition: opacity 1.1s ease, transform 1.1s ease, filter 1.1s ease; }
 .image-layer--back { z-index: -3; opacity: 0; filter: saturate(.75); transform: scale(1.06); }
 .image-layer--back.is-visible { opacity: 1; }
 .image-layer--current { z-index: -4; opacity: 1; animation: drift 15s ease-out both; }
 .image-layer--current.is-fading { opacity: 0; }
+.stage[data-transition="slide"] .image-layer--back { opacity: 1; transform: translateX(100%) scale(1.04); }
+.stage[data-transition="slide"] .image-layer--back.is-visible { transform: translateX(0) scale(1); }
+.stage[data-transition="zoom"] .image-layer--back { transform: scale(1.14); }
+.stage[data-transition="zoom"] .image-layer--back.is-visible { transform: scale(1); }
+.stage[data-transition="blur"] .image-layer--back { filter: saturate(.75) blur(18px); transform: scale(1.04); }
+.stage[data-transition="blur"] .image-layer--back.is-visible { filter: saturate(1) blur(0); transform: scale(1); }
 .stage-wash { position: absolute; inset: 0; z-index: -2; background: linear-gradient(180deg, rgba(4, 9, 8, .58), transparent 38%, rgba(4, 8, 7, .64)); }
 .topbar, .footer-row, .stage-actions { display: flex; align-items: center; }
 .topbar { justify-content: space-between; gap: 20px; font-size: 12px; letter-spacing: .02em; }
@@ -75,6 +81,9 @@ h1 { max-width: 680px; margin: 0; color: var(--golden-orange); font-family: var(
 .duration-input { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .duration-input input, .duration-input select { width: 100%; min-height: 46px; border: 1px solid var(--green); border-radius: 3px; padding: 0 12px; background: #1a211e; color: var(--yellow); font: 500 13px 'DM Mono', monospace; }
 .duration-input input:focus, .duration-input select:focus { outline: 2px solid var(--lime); outline-offset: 2px; }
+.transition-select { width: 100%; min-height: 46px; border: 1px solid var(--green); border-radius: 3px; padding: 0 12px; background: #1a211e; color: var(--yellow); font: 500 13px 'DM Mono', monospace; }
+.transition-select:focus { outline: 2px solid var(--lime); outline-offset: 2px; }
+.setting-help { margin: 8px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .setting-control output { color: var(--lime); }
 .setting-control input[type='checkbox'] { width: 17px; height: 17px; accent-color: var(--lime); }
 .settings-form input[type='range'] { margin: 5px 0 35px; accent-color: var(--lime); }
@@ -108,6 +117,11 @@ input[type='range'] { width: 100%; accent-color: var(--ink); }
 .panel-footer a { color: var(--yellow); font-size: 10px; font-weight: 700; text-decoration: none; }
 .panel-footer a:hover { text-decoration: underline; }
 @keyframes drift { from { transform: scale(1.08); } to { transform: scale(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .image-layer { transition-duration: .01ms; }
+  .image-layer--current { animation: none; }
+}
 @media (max-width: 850px) { .stage { min-height: 100vh; } .queue-panel { padding: 72px 7vw 28px; } .settings-block { margin-top: 40px; } h1 { font-size: clamp(47px, 13vw, 78px); } }
 @media (max-width: 600px) { .stage { min-height: 100svh; padding: 20px 20px 22px; } .topbar-meta { max-width: 42vw; overflow: hidden; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; } .stage-content { padding: 8vh 0 6vh; } h1 { max-width: 94vw; font-size: clamp(48px, 14vw, 76px); line-height: .94; } .image-caption { max-width: 85vw; margin: 16px 0 22px; line-height: 1.45; } .button { min-height: 46px; padding: 0 14px; } .button #play-label { max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .footer-row { gap: 10px; padding-top: 10px; } .location-label { display: block; font-size: 10px; } .slide-controls { flex-shrink: 0; } .queue-panel { width: min(100%, 410px); padding: 72px 24px 28px; } .panel-tabs { margin-bottom: 38px; } .settings-form { margin-top: 38px; } }
 @media (max-width: 360px) { .topbar-meta { display: none; } h1 { font-size: 46px; } .stage-actions .button { max-width: 150px; } .location-label { max-width: 46vw; } }
