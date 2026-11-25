@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-24T22:24:09Z",
+  "updatedAt": "2026-11-25T08:29:40Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.SunsetPoint_EN-US0827880440_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "A southwestern snowfall",
+      "location": "Sunset Point, Bryce Canyon National Park, Utah (© Colin D. Young/Alamy)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_EN-US7053432564_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Hunting from dusk till dawn",
       "location": "Pair of barn owls (© Zahoor Salmi/Getty Images)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.TrailCedars_EN-US2240500417_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Step into the great outdoors",
-      "location": "Trail of the Cedars, Glacier National Park, Montana (© DBushue Photography/Getty Images)"
     }
   ]
 }
