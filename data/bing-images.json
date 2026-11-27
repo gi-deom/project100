@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-26T21:28:50Z",
+  "updatedAt": "2026-11-27T08:26:47Z",
   "images": [
+    {
+      "url": "https://www.bing.com/th?id=OHR.FaceCanyon_EN-US6254374163_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
+      "type": "image",
+      "title": "Ribbons of gray and gold",
+      "location": "Butte at sunset, Face Canyon, Lake Powell, Utah (© Jeff Foott/Minden)"
+    },
     {
       "url": "https://www.bing.com/th?id=OHR.WildTom_EN-US1069249609_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
       "type": "image",
@@ -42,12 +48,6 @@
       "type": "image",
       "title": "Feasting in the fjords",
       "location": "Diving humpback whale, Kvaloya, Troms, Northern Norway (© Espen Bergersen/Minden Pictures)"
-    },
-    {
-      "url": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp",
-      "type": "image",
-      "title": "Where ideas take shape",
-      "location": "The \"Body of Knowledge\" sculpture by Jaume Plensa at Goethe University in Frankfurt, Germany (© Todamo/Shutterstock)"
     }
   ]
 }
